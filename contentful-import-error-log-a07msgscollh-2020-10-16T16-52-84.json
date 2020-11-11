@@ -1,0 +1,32 @@
+[
+  {
+    "ts": "2020-10-16T23:52:06.206Z",
+    "level": "error",
+    "error": {
+      "originalError": {
+        "name": "NotFound",
+        "message": "{\n  \"status\": 404,\n  \"statusText\": \"Not Found\",\n  \"message\": \"The resource could not be found.\",\n  \"details\": {},\n  \"request\": {\n    \"url\": \"a07msgscollh\",\n    \"headers\": {\n      \"Accept\": \"application/json, text/plain, */*\",\n      \"Content-Type\": \"application/vnd.contentful.management.v1+json\",\n      \"X-Contentful-User-Agent\": \"app contentful.cli/1.4.39; feature space-import; sdk contentful-management.js/6.1.2; platform node.js/v11.10.0; os macOS/19.6.0;\",\n      \"Authorization\": \"Bearer ...cUA24\",\n      \"user-agent\": \"node.js/v11.10.0\",\n      \"Accept-Encoding\": \"gzip\"\n    },\n    \"method\": \"get\"\n  },\n  \"requestId\": \"cf959c5136da18b4674add8c0f76d3ae\"\n}"
+      },
+      "data": {
+        "status": 404,
+        "statusText": "Not Found",
+        "message": "The resource could not be found.",
+        "details": {
+        },
+        "request": {
+          "url": "a07msgscollh",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.cli/1.4.39; feature space-import; sdk contentful-management.js/6.1.2; platform node.js/v11.10.0; os macOS/19.6.0;",
+            "Authorization": "Bearer ...cUA24",
+            "user-agent": "node.js/v11.10.0",
+            "Accept-Encoding": "gzip"
+          },
+          "method": "get"
+        },
+        "requestId": "cf959c5136da18b4674add8c0f76d3ae"
+      }
+    }
+  }
+]
