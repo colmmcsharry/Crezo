@@ -78,7 +78,7 @@ export const pageQuery = graphql`
       title
       slug
       featureImage {
-        fluid(maxWidth: 1500) {
+        fluid(maxWidth: 2000) {
           base64
           aspectRatio
           src
@@ -95,7 +95,7 @@ export const pageQuery = graphql`
       }
 
       pics {
-        fluid(maxWidth: 1500) {
+        fluid(maxWidth: 2000) {
           base64
           aspectRatio
           src

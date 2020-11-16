@@ -68,10 +68,14 @@ export default class Photospage extends Component {
                       });
                     }}
                   ></i>
-                  <img
+
+                  <Img fluid={this.props.lolphotosource[selectedItem].fluid}
+                        alt="popup-img" 
+                      />
+                  {/* <img
                     src={this.props.lolphotosource[selectedItem].file.url}
                     alt="popup-img"
-                  />
+                  />  */}
                 </div>
               </div>
             ) : (
@@ -85,23 +89,3 @@ export default class Photospage extends Component {
     );
   }
 }
-export const projquery = graphql`
-  query projquery {
-    contentfulProject {
-      image {
-        file {
-          url
-        }
-        fluid(maxWidth: 600) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-        }
-      }
-    }
-  }
-`;
