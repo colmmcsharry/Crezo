@@ -6,13 +6,11 @@ import SEO from "../components/seo";
 
 import Banner from "../components/banner";
 import About from "../components/about";
-import Service from "../components/service";
-import Work from "../components/work";
+import Services from "../components/services.js";
 import Blogs from "../components/blogs";
 import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
 import Photos from "../components/photos";
-import Mycomp from '../components/Mycomp.js';
 import Myheader from '../components/myworkingcomponent.js';
 import PhotosPage from './projectphotos.js'
 import Project from '../components/project.js'
@@ -42,7 +40,7 @@ const IndexPage = ({ data }) => (
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Service")
       .map(t => {
-        return <Service data={data.allContentfulService}></Service>;
+        return <Services data={data.allContentfulServices}></Services>;
       })}
 
     {data.contentfulSiteInformation.menus
@@ -51,12 +49,7 @@ const IndexPage = ({ data }) => (
         return <Blogs data={data.allContentfulBlogs}></Blogs>;
       })}
 
-   {/* {data.contentfulSiteInformation.menus
-      .filter(item => item === "Work")
-      .map(t => {
-        return <Work data={data.allContentfulWorks}></Work>;
-      })}
-*/}
+
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Testimonials")
       .map(t => {
@@ -171,7 +164,7 @@ export const pageQuery = graphql`
 
 
     }
-    allContentfulService {
+    allContentfulServices {
       edges {
         node {
           title
