@@ -7,14 +7,13 @@ import SEO from "../components/seo";
 import Banner from "../components/banner";
 import About from "../components/about";
 import Services from "../components/services.js";
-import Blogs from "../components/blogs";
 import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
 import Photos from "../components/photos";
-import Myheader from '../components/myworkingcomponent.js';
 import PhotosPage from './projectphotos.js'
-import Project from '../components/project.js'
+import Projects from '../components/projects.js'
 import Mapprojects from './projectphotos2.js'
+import Readmore from '../components/readmore.js'
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
@@ -38,15 +37,15 @@ const IndexPage = ({ data }) => (
 
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "Service")
+      .filter(item => item === "Services")
       .map(t => {
         return <Services data={data.allContentfulServices}></Services>;
       })}
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "Blogs")
+      .filter(item => item === "Projects")
       .map(t => {
-        return <Blogs data={data.allContentfulBlogs}></Blogs>;
+        return <Projects data={data.allContentfulProjects}></Projects>;
       })}
 
 
@@ -62,7 +61,7 @@ const IndexPage = ({ data }) => (
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Contact")
       .map(t => {
-        return <Contact data={data.contentfulAboutMe.gmail}></Contact>; 
+        return <Contact data={data.contentfulAboutMe}></Contact>; 
       })}
 
       {/*<Project lolphotosource={data.contentfulProject.image}
@@ -83,48 +82,15 @@ export const pageQuery = graphql`
   query AboutQuery {
     contentfulAboutMe {
       name
-      photo {
-        file {
-          url
-        }
-        fluid {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-        }
-      }
       welcome
-      age
       address
       facebook
-      github
       gmail
-      manyphoto{
-        id
-        title
-        description
-        file{
-          url
-        }
-        fluid {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-        }
-      }
+      phone
+      fax
       id
-      instagram
+      address
       linkdin
-      twitter
-      location
       description {
         childMarkdownRemark {
           html
@@ -141,7 +107,7 @@ export const pageQuery = graphql`
           sizes
         }
       }
-      bannerList
+      
     }
     contentfulProject {
       id
@@ -168,6 +134,7 @@ export const pageQuery = graphql`
       edges {
         node {
           title
+          preview
           description {
             childMarkdownRemark {
               html
@@ -176,7 +143,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulBlogs(limit: 5, sort: {fields: createdAt, order: DESC}) {
+    allContentfulProjects(limit: 5, sort: {fields: createdAt, order: DESC}) {
       edges {
         node {
           title

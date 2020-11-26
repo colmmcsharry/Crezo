@@ -3,14 +3,14 @@ import Img from "gatsby-image";
 import { Link } from "gatsby";
 import moment from "moment";
 
-export default class Blogs extends Component {
+export default class Projects extends Component {
   render() {
     const { data } = this.props;
     return (
-      <div className="blogs-section section" id="Blogs">
+      <div className="blogs-section section" id="Projects">
         <div className="container">
           <div className="section-head">
-            <h2>Blogs</h2>
+            <h2>Projects</h2>
           </div>
           <ul
             className={`blogs-list ${data.edges.length < 5 ? "few-blogs" : ""}`}
@@ -19,7 +19,8 @@ export default class Blogs extends Component {
               return (
                 <li key={index} className="item">
                   <div className="inner">
-                    <Link className="link" to={item.node.slug} />
+                    <Link className="link" to= {item.node.slug} />
+
 
                     {item.node.featureImage ? (
                       <Img
@@ -43,8 +44,8 @@ export default class Blogs extends Component {
             })}
           </ul>
           <div className="see-more">
-            <Link to="/blogs">
-              <span>More Blogs</span>
+            <Link to="/projects">
+              <span>More Projects</span>
             </Link>
           </div>
         </div>

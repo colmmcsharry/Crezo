@@ -39,7 +39,7 @@ export default class Photos extends Component {
       <div className="photos section" id="Photos">
         <div className="container">
           <div className="section-head">
-            <h2>Projects</h2>
+            <h2>Photos</h2>
           </div>
           <div className="slider-section photos-list">
             <Slider {...settings}>

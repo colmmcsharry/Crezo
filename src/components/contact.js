@@ -15,15 +15,15 @@ export default class Contact extends Component {
   <ul className="details">
               <li>
                 <strong>Phone</strong>
-                <p>(604) 704 8019</p>
+                <p>{data.phone}</p>
               </li>
               <li>
                 <strong>Fax</strong>
-                <p>(604) 298 8014</p>
+                <p>{data.fax}</p>
               </li>
               <li>
                 <strong>Address</strong>
-                <p>{data.location}</p>
+                <p>{data.address}</p>
               </li>
               <li>
                 <strong>Email</strong>

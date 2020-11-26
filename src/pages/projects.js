@@ -3,20 +3,19 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
 import moment from "moment";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-export default class Projectsold extends Component {
+export default class Projectspage extends Component {
   render() {
     const { data } = this.props;
     return (
       <Layout>
         <SEO
-          title="Blogs"
-          keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`, `Blogs`]}
+          title="Projects"
+          keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`, `Projects`]}
         />
-        <div className="site-container blogs-page" id="Projects">
+        <div className="site-container blogs-page" id="Projectspage">
           <div className="container">
             <div className="section-head">
               <h1 className="line-heading h2">Projects</h1>
@@ -30,7 +29,7 @@ export default class Projectsold extends Component {
                 return (
                   <li key={index} className="item">
                     <div className="inner">
-                      <Link className="link" to={item.node.slug} />
+                      <Link className="link" to={'/' + item.node.slug} />
                       {item.node.featureImage ? (
                         <Img
                           fixed={item.node.featureImage.fluid}
@@ -60,7 +59,7 @@ export default class Projectsold extends Component {
 }
 
 export const pageQuery = graphql`
-  query BlogsQuery {
+  query ProjectsQuery {
     allContentfulProjects(sort: {fields: createdAt, order: DESC}) {
       edges {
         node {

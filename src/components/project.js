@@ -6,7 +6,7 @@ import SEO from "../components/seo";
 import Img from "gatsby-image";
 import Banner from "../components/banner";
 import About from "../components/about";
-import Blogs from "../components/blogs";
+
 
 
 

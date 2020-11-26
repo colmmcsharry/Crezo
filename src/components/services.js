@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import Readmore from './readmore.js'
+
 
 export default class Services extends Component {
   render() {
     const { data } = this.props;
     return (
-      <div className="service section" id="Service">
+      <div className="service section" id="Services">
         <div className="container">
           <div className="section-head">
             <h2>Services</h2>
@@ -14,12 +16,14 @@ export default class Services extends Component {
               return (
                 <div key={index} className="col-md-6 mb-3">
                   <div className="service-main">
+                  
                     <h3>{item.node.title}</h3>
-                    <div
+                    <Readmore shortcontent= {item.node.preview} longcontent= <div
                       dangerouslySetInnerHTML={{
                         __html: item.node.description.childMarkdownRemark.html
                       }}
-                    />
+                    />  />
+                    
                   </div>
                 </div>
               );
@@ -30,3 +34,5 @@ export default class Services extends Component {
     );
   }
 }
+
+/*Copy all this and turn into a Functional component, using the React-Boostrap collapse thing*/

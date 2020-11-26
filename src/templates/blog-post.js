@@ -9,9 +9,9 @@ import SEO from "../components/seo";
 import Share from "../components/share";
 import Photospage from '../pages/projectphotos.js'
 
-export default class blogPost extends Component {
+export default class projectPost extends Component {
   render() {
-    const data = this.props.data.contentfulBlogs;
+    const data = this.props.data.contentfulProjects;
 
     const siteurl = this.props.data.contentfulSiteInformation.siteUrl + "/";
     
@@ -73,7 +73,7 @@ export default class blogPost extends Component {
 
 export const pageQuery = graphql`
   query SinglePostQuery($slug: String!) {
-    contentfulBlogs(slug: { eq: $slug }) {
+    contentfulProjects(slug: { eq: $slug }) {
       id
       title
       slug

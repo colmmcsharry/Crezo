@@ -58,21 +58,21 @@ export default class Header extends Component {
                     })}
 
                   {data.menus
-                    .filter(item => item === "Service")
+                    .filter(item => item === "Services")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Service`}>Services</Link>
+                          <Link to={`/#Services`}>Services</Link>
                         </li>
                       );
                     })}
 
                   {data.menus
-                    .filter(item => item === "Blogs")
+                    .filter(item => item === "Projects")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Blogs`}>Blogs</Link>
+                          <Link to={`/#Projects`}>Projects</Link>
                         </li>
                       );
                     })}
@@ -87,15 +87,17 @@ export default class Header extends Component {
                         </li>
                       );
                     })}
+
                   {data.menus
                     .filter(item => item === "Photos")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Photos`}>Projects</Link>
+                          <Link to={`/#Photos`}>Fotos</Link>
                         </li>
                       );
                     })}
+                    
                   {data.menus
                     .filter(item => item === "Contact")
                     .map(t => {
@@ -120,11 +122,11 @@ export default class Header extends Component {
                     <Link to="/#home">Home</Link>
                   </li>
                   {data.menus
-                    .filter(item => item === "Blogs")
+                    .filter(item => item === "Projects")
                     .map(t => {
                       return (
                         <li>
-                          <Link to="/blogs">Blogs</Link>
+                          <Link to="/projects">Projects</Link>
                         </li>
                       );
                     })}
