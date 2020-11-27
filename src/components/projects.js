@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
-import moment from "moment";
 
 export default class Projects extends Component {
   render() {
@@ -33,10 +32,7 @@ export default class Projects extends Component {
                     )}
                     <div className="details">
                       <h3 className="title">{item.node.title}</h3>
-                      <span className="date">
-                        <i className="fas fa-calendar-alt"></i>{" "}
-                        {moment(item.node.createdAt).format("LL")}
-                      </span>
+                      
                     </div>
                   </div>
                 </li>

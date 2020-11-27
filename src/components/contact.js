@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Header from './about.js' ;
-import Img from "gatsby-image";
 
 export default class Contact extends Component {
   render() {
@@ -34,11 +32,10 @@ export default class Contact extends Component {
             </ul>
 
           <form
-            action={`https://formspree.io/${this.props.data}`}
+            action={`https://formspree.io/f/xleowbpw`}
             name="contact"
             method="POST"
-            data-netlify="true"
-          >
+            >
             <div>
               <label>
                 Your Name: <input type="text" name="name" required />

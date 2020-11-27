@@ -19,7 +19,7 @@ export default class Testimonial extends Component {
         <div className="container">
           <div className="section-head text-center">
             <h2>Testimonials</h2>
-            <p>People I've worked with have said some nice things...</p>
+            <p>Hear what people are saying about us</p>
           </div>
           <Slider {...settings}>
             {data.edges.map((item, index) => {

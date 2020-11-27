@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner from "../components/banner";
 import About from "../components/about";
 import Services from "../components/services.js";
@@ -14,6 +14,9 @@ import PhotosPage from './projectphotos.js'
 import Projects from '../components/projects.js'
 import Mapprojects from './projectphotos2.js'
 import Readmore from '../components/readmore.js'
+import Trades from '../components/trades.js'
+import Button from 'react-bootstrap/Button';
+import Collapse from 'react-bootstrap/Collapse';
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
@@ -64,13 +67,8 @@ const IndexPage = ({ data }) => (
         return <Contact data={data.contentfulAboutMe}></Contact>; 
       })}
 
-      {/*<Project lolphotosource={data.contentfulProject.image}
-      sourcename={data.contentfulProject.status} />
+      <Trades />
 
-      <PhotosPage lolphotosource={data.contentfulProject.image} />
-
-*/}
-      {/*<span>{data.contentfulProject.architect}</span>*/}
       
 
   </Layout>
@@ -143,7 +141,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulProjects(limit: 5, sort: {fields: createdAt, order: DESC}) {
+    allContentfulProjects(limit: 5) {
       edges {
         node {
           title
@@ -160,7 +158,7 @@ export const pageQuery = graphql`
               sizes
             }
           }
-          createdAt
+          
         }
       }
     }

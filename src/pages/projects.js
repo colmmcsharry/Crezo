@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
-import moment from "moment";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -41,10 +40,7 @@ export default class Projectspage extends Component {
                       )}
                       <div className="details">
                         <h3 className="title">{item.node.title}</h3>
-                        <span className="date">
-                          <i className="fas fa-calendar-alt"></i>{" "}
-                          {moment(item.node.createdAt).format("LL")}
-                        </span>
+                        
                       </div>
                     </div>
                   </li>
@@ -60,7 +56,7 @@ export default class Projectspage extends Component {
 
 export const pageQuery = graphql`
   query ProjectsQuery {
-    allContentfulProjects(sort: {fields: createdAt, order: DESC}) {
+    allContentfulProjects {
       edges {
         node {
           title
@@ -76,7 +72,7 @@ export const pageQuery = graphql`
               sizes
             }
           }
-          createdAt
+          
         }
       }
     }
