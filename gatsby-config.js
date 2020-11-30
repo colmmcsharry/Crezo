@@ -1,6 +1,6 @@
 const dotenv = require("dotenv");
 
-if (process.env.NODE_ENV !== "production") {
+if (process.env.ENVIRONMENT !== "production") {
   dotenv.config();
 }
 
@@ -24,8 +24,9 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId:`88iahaughjbm`,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN      }
+        spaceId,
+        accessToken
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
