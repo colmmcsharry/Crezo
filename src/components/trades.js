@@ -17,15 +17,18 @@ const [open, setOpen] = useState(false);
             <h2 className="text-center">Trades</h2> <br/><br/>
             <p>Thank you for your interest in working with us <br/> </p>
             <p>Please submit the following information</p>
-          </div>
 
-          <Button
+            <button
         onClick={() => setOpen(!open)}
         aria-controls="reveal"
         aria-expanded={open}
+        className="reveal"
       >
-        click
-      </Button>
+        Reveal Form 
+      </button>
+          </div>
+
+          
 
 <Collapse in={open}>
 

@@ -61,13 +61,13 @@ export default class Projectsold extends Component {
 
 export const pageQuery = graphql`
   query BlogsQuery {
-    allContentfulProjects(sort: {fields: createdAt, order: DESC}) {
+    allContentfulProjects(sort: {fields: createdAt, order: ASC}) {
       edges {
         node {
           title
           slug
           featureImage {
-            fluid(maxWidth: 1500) {
+            fluid(maxWidth: 1800) {
               base64
               aspectRatio
               src

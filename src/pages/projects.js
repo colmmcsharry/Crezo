@@ -56,7 +56,7 @@ export default class Projectspage extends Component {
 
 export const pageQuery = graphql`
   query ProjectsQuery {
-    allContentfulProjects {
+    allContentfulProjects (sort: {order: ASC, fields: updatedAt}, filter: {}) {
       edges {
         node {
           title

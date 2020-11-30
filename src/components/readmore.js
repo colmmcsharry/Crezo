@@ -13,6 +13,7 @@ function Readmore(props) {
     {props.shortcontent}
     <br/><br/>
       <a className="read-more-link" onClick={()=>{setReadMore(!readMore)}}><h2 className="readmorelink grow">{linkName}</h2></a>
+      <br/><br/>
       {readMore && extraContent}
 
     </div>

@@ -9,9 +9,6 @@ import Footer from "./footer";
 import "../css/style.css";
 import "../css/font-awesome.css";
 
-if (typeof window !== "undefined") {
-  require("smooth-scroll")('a[href*="#"]');
-}
 
 const Layout = ({ children, header }) => (
   <StaticQuery

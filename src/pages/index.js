@@ -95,7 +95,7 @@ export const pageQuery = graphql`
         }
       }
       bannerImage {
-        fluid(maxWidth: 1500) {
+        fluid(maxWidth: 1800) {
           base64
           aspectRatio
           src
@@ -141,7 +141,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulProjects(limit: 5) {
+    allContentfulProjects(limit: 5, sort: {order: ASC, fields: updatedAt}, filter: {}          ) {
       edges {
         node {
           title
