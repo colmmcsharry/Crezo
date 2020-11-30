@@ -1,8 +1,7 @@
-const dotenv = require("dotenv");
+require("dotenv").config({
+  path: `.env`,
+})
 
-if (process.env.ENVIRONMENT !== "production") {
-  dotenv.config();
-}
 
 const { spaceId, accessToken } = process.env;
 
@@ -21,13 +20,16 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
-    {
-      resolve: "gatsby-source-contentful",
+
+{
+      resolve: `gatsby-source-contentful`,
       options: {
-        spaceId,
-        accessToken
-      }
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+      },
     },
+
+ 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
