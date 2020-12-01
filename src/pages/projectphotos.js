@@ -21,9 +21,9 @@ export default class Photospage extends Component {
     return (
       
         <React.Fragment>
-          
+          this is where it was
             
-             
+{/*             
             <ul className="photos-page-list">
               {this.props.lolphotosource.map((item, index) => {
                 return (
@@ -72,17 +72,14 @@ export default class Photospage extends Component {
                   <Img fluid={this.props.lolphotosource[selectedItem].fluid}
                         alt="popup-img" 
                       />
-                  {/* <img
-                    src={this.props.lolphotosource[selectedItem].file.url}
-                    alt="popup-img"
-                  />  */}
+                  
                 </div>
               </div>
             ) : (
               ""
             )}
 
-
+*/}
           
         </React.Fragment>
       
