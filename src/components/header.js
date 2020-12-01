@@ -52,7 +52,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link href={`/#About`}>About</Link>
+                          <Link to={`/#About`}>About</Link>
                         </li>
                       );
                     })}
@@ -62,7 +62,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link href={`/#Services`}>Services</Link>
+                          <Link to={`/#Services`}>Services</Link>
                         </li>
                       );
                     })}
@@ -72,7 +72,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link href={`/#Projects`}>Projects</Link>
+                          <Link to={`/#Projects`}>Projects</Link>
                         </li>
                       );
                     })}
@@ -83,7 +83,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link href={`/#Testimonials`}>Testimonials</Link>
+                          <Link to={`/#Testimonials`}>Testimonials</Link>
                         </li>
                       );
                     })}
@@ -93,7 +93,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link href={`/#Photos`}>Fotos</Link>
+                          <Link to={`/#Photos`}>Fotos</Link>
                         </li>
                       );
                     })}
@@ -103,7 +103,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link href={`/#Contact`}>Contact</Link>
+                          <Link to={`/#Contact`}>Contact</Link>
                         </li>
                       );
                     })}
