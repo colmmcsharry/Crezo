@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Photospage from '../pages/projectphotos.js'
+import Photospage from '../components/projectphotos.js'
 
 export default class projectPost extends Component {
   render() {
@@ -54,9 +54,7 @@ export default class projectPost extends Component {
             </div>
 
 
-{/*<Photospage lolphotosource={data.pics}/>*/}
-
-{/*make sure to uncomment the above after I get Netlify working*/}
+<Photospage lolphotosource={data.pics}/>
 
 
           </div>

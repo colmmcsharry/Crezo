@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
 import PhotosPage from './projectphotos.js'
@@ -92,4 +92,4 @@ export const projpageQuery = graphql`
       }
     }
   }
-`;
+`;*/
