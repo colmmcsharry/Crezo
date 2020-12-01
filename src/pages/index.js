@@ -10,7 +10,6 @@ import Services from "../components/services.js";
 import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
 import Photos from "../components/photos";
-import PhotosPage from './projectphotos.js'
 import Projects from '../components/projects.js'
 import Mapprojects from './projectphotos2.js'
 import Readmore from '../components/readmore.js'
@@ -32,12 +31,12 @@ const IndexPage = ({ data }) => (
         return <About data={data.contentfulAboutMe}></About>;
       })}
 
-        {data.contentfulSiteInformation.menus
+{/*        {data.contentfulSiteInformation.menus
       .filter(item => item === "Photos")
       .map(t => {
         return <Photos data={data.contentfulPhotos}></Photos>;
       })}
-
+*/}
 
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Services")
