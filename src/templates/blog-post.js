@@ -54,7 +54,9 @@ export default class projectPost extends Component {
             </div>
 
 
-<Photospage lolphotosource={data.pics}/>
+{/*<Photospage lolphotosource={data.pics}/>*/}
+
+{/*make sure to uncomment the above after I get Netlify working*/}
 
 
           </div>
