@@ -11,7 +11,6 @@ import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
 import Photos from "../components/photos";
 import Projects from '../components/projects.js'
-import Mapprojects from './projectphotos2.js'
 import Readmore from '../components/readmore.js'
 import Trades from '../components/trades.js'
 import Button from 'react-bootstrap/Button';
