@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MyMap from './map.js'
 
 export default class Contact extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class Contact extends Component {
           <div className="section-head">
             <h2 className="text-center">Contact Us</h2>
           </div>
-          
+
   <ul className="details">
               <li>
                 <strong>Phone</strong>
@@ -56,6 +57,7 @@ export default class Contact extends Component {
               <button type="submit">Send</button>
             </div>
           </form>
+          <MyMap />
         </div>
       </div>
       

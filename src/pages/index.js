@@ -15,6 +15,7 @@ import Readmore from '../components/readmore.js'
 import Trades from '../components/trades.js'
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
+import MyMap from '../components/map.js'
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
@@ -66,8 +67,6 @@ const IndexPage = ({ data }) => (
       })}
 
       <Trades />
-
-      
 
   </Layout>
 );

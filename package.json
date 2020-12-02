@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Rohit Gupta <rohitguptab33@gmail.com>",
   "dependencies": {
+    "@react-google-maps/api": "^1.13.0",
     "bootstrap": "^4.5.3",
     "disqus-react": "^1.0.10",
     "dotenv": "^8.2.0",
