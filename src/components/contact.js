@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MyMap from './map.js'
+import Mymap from './map.js'
 
 export default class Contact extends Component {
   render() {
@@ -57,7 +57,9 @@ export default class Contact extends Component {
               <button type="submit">Send</button>
             </div>
           </form>
-          <MyMap />
+
+          <Mymap />
+
         </div>
       </div>
       
