@@ -113,7 +113,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink activeClass="active" to="Contact" spy={true} offset={-60} smooth={true} duration={900}>
+                          <ScrollLink activeClass="active" to="Contact" spy={false} offset={-60} smooth={true} duration={900}>
                           <span>Contact</span>
                           </ScrollLink>
                         </li>
