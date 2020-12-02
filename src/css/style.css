@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700,700i&display=swap');
 
-html {scroll-behavior: smooth;}
 
-#About, #Services, #Projects, #Contact {scroll-margin-top: 45px;}
 
 
 
@@ -17,7 +15,7 @@ h4{font-size:18px}
 h5{font-size:10px}
 p{font-size:15px}
 .banner{position:relative;height:100vh}
-a:hover{color:#d83d0a;text-decoration:underline}
+a:hover{color:#d83d0a;text-decoration:underline;cursor:pointer;}
 .banner .banner-details{position:absolute;top:50%;left:50%;z-index:9;display:flex;justify-content:center;align-items:center;flex-direction:column;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);width:90%;color:#fff}
 .banner img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
 body{margin:0;background:#fafafe}

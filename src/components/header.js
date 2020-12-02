@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React, { Component } from "react";
+import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 
 export default class Header extends Component {
   constructor(props) {
@@ -7,7 +8,16 @@ export default class Header extends Component {
     this.state = {
       menu: false
     };
+
+     
+
   }
+
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
+
 
   render() {
     const { data, header } = this.props;
@@ -16,14 +26,14 @@ export default class Header extends Component {
       <header className={`site-header ${menu ? "active" : ""}`}>
         <div className="container">
           <div className="header-main">
-            <div className="logo">
-              <Link to="/">
+            <div className="logo" onClick={this.scrollToTop}>
+              
                 {data.logo.file.url ? (
                   <img src={data.logo.file.url} alt="logo" />
                 ) : (
                   <span>{data.siteName}</span>
                 )}
-              </Link>
+              
             </div>
             <div
               className="responsive-menu"
@@ -45,14 +55,14 @@ export default class Header extends Component {
                   }}
                 >
                   <li>
-                    <Link href="/#home">Home</Link>
+                    <a onClick={this.scrollToTop}>Home</a>
                   </li>
                   {data.menus
                     .filter(item => item === "About")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#About`}>About</Link>
+                          <Link href={`/#About`}>About</Link>
                         </li>
                       );
                     })}
@@ -72,7 +82,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Projects`}>Projects</Link>
+                          <Link href={`/#Projects`}>Projects</Link>
                         </li>
                       );
                     })}
