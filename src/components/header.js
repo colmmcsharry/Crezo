@@ -17,6 +17,10 @@ export default class Header extends Component {
     scroll.scrollToTop();
   };
 
+  scrollTo = () => {
+    scroll.scrollTo('Services');
+  };
+
 
 
   render() {
@@ -62,7 +66,11 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                        <ScrollLink activeClass="active" to="About" spy={true} offset={-60} smooth={true} duration={900}>
+                        <ScrollLink to="About" offset={-50} smooth={true} duration={900} onClick={() => {
+                    this.setState({
+                      menu: false
+                    });
+                  }}>
                           <span>About</span>
                           </ScrollLink>
                         </li>
@@ -74,9 +82,13 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink activeClass="active" to="Services" spy={true} offset={-60} smooth={true} duration={900}>
+                        <ScrollLink to="Services" offset={-50} smooth={true} duration={900} onClick={() => {
+                    this.setState({
+                      menu: false
+                    });
+                  }}>
                           <span>Services</span>
-                          </ScrollLink>
+                        </ScrollLink>
                         </li>
                       );
                     })}
@@ -86,7 +98,11 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink activeClass="active" to="Projects" spy={true} offset={-60} smooth={true} duration={900}>
+                          <ScrollLink to="Projects" offset={-50} smooth={true} duration={900} onClick={() => {
+                    this.setState({
+                      menu: false
+                    });
+                  }}>
                           <span>Projects</span>
                           </ScrollLink>
                         </li>
@@ -99,7 +115,11 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink activeClass="active" to="Testimonials" spy={true} offset={-60} smooth={true} duration={900}>
+                          <ScrollLink to="Testimonials" offset={-50} smooth={true} duration={900} onClick={() => {
+                    this.setState({
+                      menu: false
+                    });
+                  }}>
                           <span>Testimonials</span>
                           </ScrollLink>
                         </li>
@@ -113,7 +133,11 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink activeClass="active" to="Contact" spy={false} offset={-60} smooth={true} duration={900}>
+                          <ScrollLink to="Contact" offset={-50} smooth={true} duration={900} onClick={() => {
+                    this.setState({
+                      menu: false
+                    });
+                  }}>
                           <span>Contact</span>
                           </ScrollLink>
                         </li>

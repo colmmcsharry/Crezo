@@ -10,6 +10,7 @@ export default class Contact extends Component {
           <div className="section-head">
             <h2 className="text-center">Contact Us</h2>
           </div>
+          
   <ul className="details">
               <li>
                 <strong>Phone</strong>
@@ -21,12 +22,12 @@ export default class Contact extends Component {
               </li>
               <li>
                 <strong>Address</strong>
-                <p>{data.address}</p>
+                <p className="onmob">{data.address}</p>
               </li>
               <li>
                 <strong>Email</strong>
                 <p>
-                  <a href={`mailto:${data.gmail}`}>{data.gmail}</a>
+                  <a href={`mailto:${data.email}`}>{data.email}</a>
                 </p>
               </li>
             </ul>

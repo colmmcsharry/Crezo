@@ -8,7 +8,7 @@
 img{max-width:100%}
 .site-header{background:#333333b8;position:fixed;top:0;left:0;right:0;z-index:999;padding:20px 0}
 .site-header *{color:#fff}
-a{color:#ef5826}
+a{color:#ef5826;}
 h2{font-size:28px;line-height:34px;color:#363636}
 h3{font-size:22px}
 h4{font-size:18px}
@@ -22,7 +22,7 @@ body{margin:0;background:#fafafe}
 .banner .banner-details span{font-size:25px;margin-bottom:20px;text-shadow:1px 1px 4px #333}
 .banner .banner-details h1{font-size:60px;margin-top:0;margin-bottom:20px;text-align:center;text-shadow:1px 1px 4px #333}
 .banner .banner-details #slogan {color:#fff ;margin-top:0;margin-bottom:20px;text-align:center;text-shadow:1px 1px 4px #333;}
-.banner:after{content:"";background:rgba(0,0,0,0.55);position:absolute;left:0;right:0;top:0;bottom:0}
+.banner:after{content:"";background:rgba(0,0,0,0.35);position:absolute;left:0;right:0;top:0;bottom:0}
 .banner .banner-details .sub-data{padding:0;display:flex;list-style:none;margin:0 0 30px 0}
 .banner .banner-details .sub-data li{padding:0 15px;position:relative;font-size:18px;text-shadow:1px 1px 4px #333}
 .banner .banner-details .sub-data li:after{content:"";width:6px;height:6px;display:inline-block;background:#fff;position:absolute;top:50%;margin-top:-3px;right:-3px;border-radius:50%}
@@ -41,6 +41,7 @@ ul.social{display:flex;margin:0;padding:0;list-style-type:none;justify-content:c
 
 .site-header .header-main{display:flex;justify-content:center;align-items:center}
 .site-header .header-main .logo{width:20%}
+.site-header .header-main .logo:hover{width:20%; cursor:pointer;}
 .site-header .header-main .menu{width:90%;display:flex;align-items:center;justify-content:flex-end}
 .site-header .header-main .menu ul{padding:0;display:flex;margin:0;justify-content:flex-end;list-style:none}
 .site-header .header-main .menu ul li{margin:0 10px}
@@ -278,4 +279,6 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 }
 @media only screen and (max-width:480px){
     .about-main .left .gatsby-image-wrapper{height:400px}
+    .onmob {font-size:14px; max-width: 17ch;}
+
 }

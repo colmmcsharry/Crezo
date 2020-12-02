@@ -19,15 +19,15 @@ import Collapse from 'react-bootstrap/Collapse';
 const IndexPage = ({ data }) => (
   <Layout header="home">
     <SEO
-      title={data.contentfulAboutMe.welcome}
+      title={data.contentfulAbout.welcome}
       keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`]}
     />
-    <Banner data={data.contentfulAboutMe}></Banner>
+    <Banner data={data.contentfulAbout}></Banner>
 
     {data.contentfulSiteInformation.menus
       .filter(item => item === "About")
       .map(t => {
-        return <About data={data.contentfulAboutMe}></About>;
+        return <About data={data.contentfulAbout}></About>;
       })}
 
 {/*        {data.contentfulSiteInformation.menus
@@ -62,7 +62,7 @@ const IndexPage = ({ data }) => (
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Contact")
       .map(t => {
-        return <Contact data={data.contentfulAboutMe}></Contact>; 
+        return <Contact data={data.contentfulAbout}></Contact>; 
       })}
 
       <Trades />
@@ -76,17 +76,17 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query AboutQuery {
-    contentfulAboutMe {
+    contentfulAbout {
       name
       welcome
       address
       facebook
-      gmail
+      email
       phone
       fax
       id
       address
-      linkdin
+      linkedin
       description {
         childMarkdownRemark {
           html
