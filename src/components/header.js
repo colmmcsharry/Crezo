@@ -62,7 +62,9 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link href={`/#About`}>About</Link>
+                        <ScrollLink activeClass="active" to="About" spy={true} offset={-60} smooth={true} duration={900}>
+                          <span>About</span>
+                          </ScrollLink>
                         </li>
                       );
                     })}
@@ -72,7 +74,9 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link href={`/#Services`}>Services</Link>
+                          <ScrollLink activeClass="active" to="Services" spy={true} offset={-60} smooth={true} duration={900}>
+                          <span>Services</span>
+                          </ScrollLink>
                         </li>
                       );
                     })}
@@ -82,7 +86,9 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link href={`/#Projects`}>Projects</Link>
+                          <ScrollLink activeClass="active" to="Projects" spy={true} offset={-60} smooth={true} duration={900}>
+                          <span>Projects</span>
+                          </ScrollLink>
                         </li>
                       );
                     })}
@@ -93,27 +99,23 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Testimonials`}>Testimonials</Link>
+                          <ScrollLink activeClass="active" to="Testimonials" spy={true} offset={-60} smooth={true} duration={900}>
+                          <span>Testimonials</span>
+                          </ScrollLink>
                         </li>
                       );
                     })}
 
-                  {data.menus
-                    .filter(item => item === "Photos")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Photos`}>Fotos</Link>
-                        </li>
-                      );
-                    })}
+                  
                     
                   {data.menus
                     .filter(item => item === "Contact")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Contact`}>Contact</Link>
+                          <ScrollLink activeClass="active" to="Contact" spy={true} offset={-60} smooth={true} duration={900}>
+                          <span>Contact</span>
+                          </ScrollLink>
                         </li>
                       );
                     })}
@@ -140,15 +142,7 @@ export default class Header extends Component {
                         </li>
                       );
                     })}
-                  {data.menus
-                    .filter(item => item === "Photos")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to="/photos">Photos</Link>
-                        </li>
-                      );
-                    })}
+                 
                 </ul>
               </div>
             )}
