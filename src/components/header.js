@@ -66,7 +66,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                        <ScrollLink to="About" offset={-50} smooth={true} duration={900} onClick={() => {
+                        <ScrollLink to="About" offset={-50} smooth={true} duration={300} onClick={() => {
                     this.setState({
                       menu: false
                     });
@@ -82,7 +82,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                        <ScrollLink to="Services" offset={-50} smooth={true} duration={900} onClick={() => {
+                        <ScrollLink to="Services" offset={-50} smooth={true} duration={300} onClick={() => {
                     this.setState({
                       menu: false
                     });
@@ -98,7 +98,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink to="Projects" offset={-50} smooth={true} duration={900} onClick={() => {
+                          <ScrollLink to="Projects" offset={-50} smooth={true} duration={300} onClick={() => {
                     this.setState({
                       menu: false
                     });
@@ -115,7 +115,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink to="Testimonials" offset={-50} smooth={true} duration={900} onClick={() => {
+                          <ScrollLink to="Testimonials" offset={-50} smooth={true} duration={300} onClick={() => {
                     this.setState({
                       menu: false
                     });
@@ -133,7 +133,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink to="Contact" offset={-50} smooth={true} duration={900} onClick={() => {
+                          <ScrollLink to="Contact" offset={-50} smooth={true} duration={300} onClick={() => {
                     this.setState({
                       menu: false
                     });
