@@ -14,8 +14,13 @@ export default function Banner ({data}) {
           <div className="banner-details">
             
             <h1>{data.welcome}</h1>
-            <h2 id="slogan">The future is built on a solid foundation</h2>
+            <h2 id="slogan">The Future is Built on a Solid Foundation</h2>
             
+            <ul className="sub-data">
+              {data.bannerList.map((item, index) => {
+                return <li key={index}>{item}</li>;
+              })}
+            </ul>
           </div>
         </div>
       </div>

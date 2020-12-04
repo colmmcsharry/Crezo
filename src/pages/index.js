@@ -84,6 +84,7 @@ export const pageQuery = graphql`
       phone
       fax
       id
+      bannerList
       address
       linkedin
       description {

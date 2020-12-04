@@ -12,6 +12,11 @@ const Header = ({ data }) => (
             <h2 className="sub-position">
               About Us
             </h2>
+            
+            <h2 id="help">
+              We can help <span className="build">build</span> your project
+            </h2>
+            
             <div
               dangerouslySetInnerHTML={{
                 __html: data.description.childMarkdownRemark.html
