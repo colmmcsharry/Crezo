@@ -86,7 +86,6 @@ const detailsQuery = graphql`
     contentfulSiteInformation {
       siteName
       siteDescription
-      twiteerHandle
     }
   }
 `;

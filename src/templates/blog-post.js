@@ -106,7 +106,7 @@ export const pageQuery = graphql`
     }
     contentfulSiteInformation {
       siteUrl
-      twiteerHandle
+      
     }
     
   }
