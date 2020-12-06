@@ -9,18 +9,18 @@ export default class Header extends Component {
       menu: false
     };
 
-     
+
+// const str = window.location.pathname;
+
+
 
   }
 
-  scrollToTop = () => {
+ 
+
+  gohome = () => {
     scroll.scrollToTop();
-  };
-
-  scrollTo = () => {
-    scroll.scrollTo('Services');
-  };
-
+  }
 
 
   render() {
@@ -30,15 +30,19 @@ export default class Header extends Component {
       <header className={`site-header ${menu ? "active" : ""}`}>
         <div className="container">
           <div className="header-main">
-            <div className="logo" onClick={this.scrollToTop}>
+          <Link to="/">
+            <div className="logo" onClick={this.gohome}>
               
                 {data.logo.file.url ? (
                   <img src={data.logo.file.url} alt="logo" />
+
                 ) : (
                   <span>{data.siteName}</span>
+                  
                 )}
               
             </div>
+            </Link>
             <div
               className="responsive-menu"
               onClick={() => {

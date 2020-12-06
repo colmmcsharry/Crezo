@@ -26,9 +26,7 @@ body{margin:0;background:#fafafe}
 .banner .banner-details .sub-data li:last-child:after{display:none}
 
 
-
 ul.sub-data{flex-wrap:wrap;justify-content: center;}
-
 
 
 ul.social{display:flex;margin:0;padding:0;list-style-type:none;justify-content:center}
@@ -253,7 +251,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     .blog-post .feature-img{height:400px}
 }
 @media only screen and (max-width:767px){
-    .site-header .header-main .logo{width:40%;width:calc(100% - 30px;); }
+    .site-header .header-main .logo{width:200px; }
     .site-header .header-main{flex-wrap:wrap;align-items:center;justify-content:flex-start}
     .site-header .header-main .menu{position:fixed;top:0;right:-100%;bottom:0;width:100%;z-index:1;background:#000000c9;z-index:999;padding:80px 0 0 0;-webkit-transition:0.3s all;transition:0.3s all}
     .site-header.active .logo{z-index:9999}
@@ -286,7 +284,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     ul.sub-data {width:20%; }
 
     iframe {margin: 0 auto; width:100%;}
-    .banner .banner-details .sub-data li{padding:0 15px;position:relative;font-size:13px;text-shadow:1px 1px 4px #333;top:10px;}
+    .banner .banner-details .sub-data li{padding:0 15px;position:relative;font-size:16px;text-shadow:1px 1px 4px #333;top:10px;}
     .about-main .left .gatsby-image-wrapper{height:400px}
     .onmob {font-size:14px; max-width: 17ch;}
 

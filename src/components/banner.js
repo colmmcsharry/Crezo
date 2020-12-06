@@ -4,11 +4,12 @@ import Img from "gatsby-image";
 export default function Banner ({data}) {
   
     return (
-      <div className="banner">
+      <div className="banner" id="invis">
         <Img
           fixed={data.bannerImage.fluid}
           objectFit="cover"
           objectPosition="50% 50%"
+
         />
         <div className="container">
           <div className="banner-details">

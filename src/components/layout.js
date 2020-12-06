@@ -10,7 +10,7 @@ import "../css/style.css";
 import "../css/font-awesome.css";
 
 
-const Layout = ({ children, header }) => (
+const Layout = ({ children, header, linkto }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -33,6 +33,7 @@ const Layout = ({ children, header }) => (
           data={data.contentfulSiteInformation}
           siteTitle={data.contentfulSiteInformation.siteName}
           header={header}
+          
         />
         <div>
           <main id="home">{children}</main>
