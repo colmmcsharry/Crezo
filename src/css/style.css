@@ -268,6 +268,9 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     h2, #slogan{font-size:24px;line-height:30px}
     .responsive-menu{display:flex;position:absolute; right:20px;}
     .site-header .header-main .menu ul li a{padding:6px 20px;display:inline-block;width:100%;border-bottom:1px solid #fff;box-sizing:border-box;font-size:14px}
+
+.homebutton {margin-top:17px;}
+
 }
 @media only screen and (max-width:568px){
     .photos-page-list .item{width:100%}
@@ -282,6 +285,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 }
 @media only screen and (max-width:480px){
     ul.sub-data {width:20%; }
+    /* this is so the list of consrruction types goes vertical on mobile */
 
     iframe {margin: 0 auto; width:100%;}
     .banner .banner-details .sub-data li{padding:0 15px;position:relative;font-size:16px;text-shadow:1px 1px 4px #333;top:10px;}

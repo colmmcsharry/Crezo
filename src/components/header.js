@@ -30,9 +30,9 @@ export default class Header extends Component {
       <header className={`site-header ${menu ? "active" : ""}`}>
         <div className="container">
           <div className="header-main">
-          <Link to="/">
+          
             <div className="logo" onClick={this.gohome}>
-              
+              <Link to="/">
                 {data.logo.file.url ? (
                   <img src={data.logo.file.url} alt="logo" />
 
@@ -40,9 +40,9 @@ export default class Header extends Component {
                   <span>{data.siteName}</span>
                   
                 )}
-              
+              </Link>
             </div>
-            </Link>
+            
             <div
               className="responsive-menu"
               onClick={() => {
@@ -63,14 +63,14 @@ export default class Header extends Component {
                   }}
                 >
                   <li>
-                    <a onClick={this.scrollToTop}>Home</a>
+                    <a className="homebutton" onClick={this.gohome}>Home</a>
                   </li>
                   {data.menus
                     .filter(item => item === "About")
                     .map(t => {
                       return (
                         <li>
-                        <ScrollLink to="About" offset={-50} smooth={true} duration={300} onClick={() => {
+                        <ScrollLink to="About" offset={-50} smooth={true} duration={500} onClick={() => {
                     this.setState({
                       menu: false
                     });
@@ -86,7 +86,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                        <ScrollLink to="Services" offset={-50} smooth={true} duration={300} onClick={() => {
+                        <ScrollLink to="Services" offset={-50} smooth={true} duration={500} onClick={() => {
                     this.setState({
                       menu: false
                     });
@@ -102,7 +102,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink to="Projects" offset={-50} smooth={true} duration={300} onClick={() => {
+                          <ScrollLink to="Projects" offset={-50} smooth={true} duration={500} onClick={() => {
                     this.setState({
                       menu: false
                     });
@@ -119,7 +119,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink to="Testimonials" offset={-50} smooth={true} duration={300} onClick={() => {
+                          <ScrollLink to="Testimonials" offset={-50} smooth={true} duration={500} onClick={() => {
                     this.setState({
                       menu: false
                     });
@@ -137,7 +137,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <ScrollLink to="Contact" offset={-50} smooth={true} duration={300} onClick={() => {
+                          <ScrollLink to="Contact" offset={-50} smooth={true} duration={500} onClick={() => {
                     this.setState({
                       menu: false
                     });
