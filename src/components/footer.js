@@ -17,7 +17,7 @@ export default class footer extends Component {
                   href="https://www.facebook.com/pages/category/Construction-Company/Crezo-Construction-Inc-279485136046387/"
                   target="_blank"
                   rel="noopener noreferrer"
-                > <FontAwesomeIcon icon={faFacebookF} color='#1877F2' className='icons' /> </a>
+                > <FontAwesomeIcon icon={faFacebookF} className="icons" /> </a>
               </li>
               
               
@@ -28,7 +28,7 @@ export default class footer extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                <FontAwesomeIcon icon={faLinkedinIn} color='#1877F2' className='icons' />
+                <FontAwesomeIcon icon={faLinkedinIn} className="icons"  />
                 </a>
               </li>
               

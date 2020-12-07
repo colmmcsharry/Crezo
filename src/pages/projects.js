@@ -17,7 +17,8 @@ export default class Projectspage extends Component {
         <div className="site-container blogs-page" id="Projectspage">
           <div className="container">
             <div className="section-head">
-              <h1 className="line-heading h2">Projects</h1>
+              <h1 className="line-heading h2 proj">Projects</h1>
+              <p className="best">The best design solutions aren’t just about buildings and spaces – they’re about the human experience.</p>
             </div>
             <ul
               className={`blogs-list ${

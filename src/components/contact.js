@@ -28,7 +28,7 @@ export default class Contact extends Component {
               <li>
                 <strong>Email</strong>
                 <p>
-                  <a href={`mailto:${data.email}`}>{data.email}</a>
+                  <p>{data.email}</p>
                 </p>
               </li>
             </ul>

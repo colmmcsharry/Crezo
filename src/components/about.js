@@ -47,16 +47,16 @@ const Header = ({ data }) => (
                     href={data.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                  ><FontAwesomeIcon icon={faFacebookF} color='#1877F2' className='icons' /></a>
+                  ><FontAwesomeIcon icon={faFacebookF} className='icons' /></a>
                 </li>
                 
                 
                 <li>
                   <a
-                    href={data.linkdin}
+                    href={data.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                  ><FontAwesomeIcon icon={faLinkedinIn} color='#1877F2' className="icons" /></a>
+                  ><FontAwesomeIcon icon={faLinkedinIn} className="icons" /></a>
                 </li>
                 
               </ul>
