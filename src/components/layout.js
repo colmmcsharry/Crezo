@@ -7,7 +7,7 @@ import Header from "./header";
 import Footer from "./footer";
 
 import "../css/style.css";
-import "../css/font-awesome.css";
+// import "../css/font-awesome.css";
 
 
 const Layout = ({ children, header, linkto }) => (
@@ -33,6 +33,7 @@ const Layout = ({ children, header, linkto }) => (
           data={data.contentfulSiteInformation}
           siteTitle={data.contentfulSiteInformation.siteName}
           header={header}
+          
           
         />
         <div>

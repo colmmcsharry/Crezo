@@ -26,22 +26,12 @@ const Header = ({ data }) => (
             <div className="socials">
               <ul>
                 <li>
-                  <a
-                    className="fab fa-facebook-f"
-                    href={data.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
+                  jnkj
                 </li>
                 
                 
                 <li>
-                  <a
-                    className="fab fa-linkedin-in"
-                    href={data.linkdin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
+                  blah
                 </li>
                 
               </ul>
