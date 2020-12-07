@@ -35,7 +35,7 @@ export default class projectPost extends Component {
             {data.featureImage ? (
               <Img
                 className="feature-img"
-                fixed={data.featureImage.fluid}
+                fluid={data.featureImage.fluid} /*was fluid*/
                 objectFit="cover"
                 objectPosition="50% 50%"
               />

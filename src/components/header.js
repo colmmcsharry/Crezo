@@ -63,7 +63,7 @@ export default class Header extends Component {
                   }}
                 >
                   <li>
-                    <a className="homebutton" onClick={this.gohome}>Home</a>
+                    <a onClick={this.gohome}>Home</a>
                   </li>
                   {data.menus
                     .filter(item => item === "About")

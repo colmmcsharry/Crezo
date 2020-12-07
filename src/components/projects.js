@@ -23,7 +23,7 @@ export default class Projects extends Component {
 
                     {item.node.featureImage ? (
                       <Img
-                        fixed={item.node.featureImage.fluid}
+                        fluid={item.node.featureImage.fluid} /*was fluid*/
                         objectFit="cover"
                         objectPosition="50% 50%"
                       />

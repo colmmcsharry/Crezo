@@ -3,7 +3,7 @@
 
 *{font-family:'Josefin Sans',sans-serif}
 img{max-width:100%}
-.site-header{background:#333333b8;position:fixed;top:0;left:0;right:0;z-index:999;padding:20px 0}
+.site-header{background:#333333b8;position:fixed;top:0;left:0;right:0;z-index:900;padding:20px 0}
 .site-header *{color:#fff}
 a{color:#ef5826;}
 h2{font-size:28px;line-height:34px;color:#363636}
@@ -269,7 +269,8 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     .responsive-menu{display:flex;position:absolute; right:20px;}
     .site-header .header-main .menu ul li a{padding:6px 20px;display:inline-block;width:100%;border-bottom:1px solid #fff;box-sizing:border-box;font-size:14px}
 
-.homebutton {margin-top:17px;}
+/*.homebutton {margin-top:17px;}*/
+.site-header .header-main .menu ul li:first-of-type {margin-top:17px}
 
 }
 @media only screen and (max-width:568px){

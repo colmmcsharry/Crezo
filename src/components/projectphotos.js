@@ -38,7 +38,7 @@ export default class Photospage extends Component {
                       }}
                     >
                       <Img
-                        fixed={item.fluid}
+                        fluid={item.fluid} /*was fixed prop*/
                         objectFit="cover"
                         objectPosition="50% 50%"
                       />

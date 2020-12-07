@@ -18,7 +18,7 @@ return(
 
 {props.lolphotosource.map((pic, index) => {
   return <li key={index} className="item"> <Img
-                        fixed={pic.fluid}
+                        fluid={pic.fluid} /*was fluid*/
                         objectFit="cover"
                         objectPosition="50% 50%"/>
   <span>{props.sourcename}</span>

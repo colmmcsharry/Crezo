@@ -17,7 +17,7 @@ export default class work extends Component {
                   <div className="inner">
                     <a href={item.node.url}>
                       <Img
-                        fixed={item.node.image.fluid}
+                        fluid={item.node.image.fluid} /*was fixed prop*/
                         objectFit="cover"
                         objectPosition="50% 50%"
                       />

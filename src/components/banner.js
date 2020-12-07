@@ -6,7 +6,7 @@ export default function Banner ({data}) {
     return (
       <div className="banner">
         <Img
-          fixed={data.bannerImage.fluid}
+          fluid={data.bannerImage.fluid} /*was fixed prop*/
           objectFit="cover"
           objectPosition="50% 50%"
           loading="eager"
