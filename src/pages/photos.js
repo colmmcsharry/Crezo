@@ -29,8 +29,6 @@ export default class PhotosPage extends Component {
             <div className="section-head">
               <h1 className="line-heading h2">Photos</h1>
             </div>
-
-              
             <ul className="photos-page-list">
               {data.contentfulPhotos.photos.map((item, index) => {
                 return (
@@ -54,8 +52,7 @@ export default class PhotosPage extends Component {
                 );
               })}
             </ul>
-
-{activePopup ? (
+            {activePopup ? (
               <div className="rg-popup">
                 <span
                   className="popup-layer"
@@ -84,13 +81,6 @@ export default class PhotosPage extends Component {
             ) : (
               ""
             )}
-
-
-
-
-
-
-
           </div>
         </div>
       </Layout>

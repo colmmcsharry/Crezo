@@ -147,6 +147,23 @@ export default class Header extends Component {
                         </li>
                       );
                     })}
+
+                    {data.menus
+                    .filter(item => item === "Trades")
+                    .map(t => {
+                      return (
+                        <li>
+                          <ScrollLink to="Trades" offset={-70} smooth={true} duration={500} onClick={() => {
+                    this.setState({
+                      menu: false
+                    });
+                  }}>
+                          <span>Trades</span>
+                          </ScrollLink>
+                        </li>
+                      );
+                    })}
+
                 </ul>
               </div>
             ) : (

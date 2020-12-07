@@ -7,7 +7,6 @@ import Header from "./header";
 import Footer from "./footer";
 
 import "../css/style.css";
-// import "../css/font-awesome.css";
 
 
 const Layout = ({ children, header, linkto }) => (

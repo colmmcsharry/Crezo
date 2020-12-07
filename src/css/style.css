@@ -25,7 +25,7 @@ body{margin:0;background:#fafafe}
 .banner .banner-details .sub-data li:after{content:"";width:6px;height:6px;display:inline-block;background:#fff;position:absolute;top:50%;margin-top:-3px;right:-3px;border-radius:50%}
 .banner .banner-details .sub-data li:last-child:after{display:none}
 
-.icons {z-index:9999;}
+.icons {z-index:800;}
 
 ul.sub-data{flex-wrap:wrap;justify-content: center;}
 
@@ -212,13 +212,12 @@ pre{margin-bottom:0}
 .responsive-menu span:before{top:5px}
 .responsive-menu span:before,
 .responsive-menu span:after{background:#fff;content:'';display:block;height:100%;position:absolute;transition:all .2s ease-out;width:100%}
-.rg-popup{position:fixed;top:0;bottom:0;left:0;right:0;z-index:997;display:flex;align-items:center;justify-content:center}
+.rg-popup{position:fixed;top:0;bottom:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:center}
 .rg-popup .popup-inner{width:900px;position:relative;max-height:90%;max-width:100%;background:#fff;-webkit-animation-name:zoomIn;animation-name:zoomIn;-webkit-animation-duration:0.5s;animation-duration:0.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .rg-popup .popup-layer{position:fixed;top:0;bottom:0;left:0;right:0;height:100%;width:100%;background:#000000c9;cursor:pointer}
 .rg-popup .popup-inner img{width:100%;height:auto;max-width:100%}
-.rg-popup i.fas{position:absolute;top:10px;right:10px;background:#333333bd;color:#fff;padding:5px 7px;cursor:pointer;z-index:9999 !important}
-.fas {color:red;background-color:pink;}
-.fa-times {color:red;background-color:pink;}
+.closephoto{position:absolute;top:10px;right:10px;background:#333333bd;color:#fff;font-size: 20px;padding:8px;cursor:pointer;z-index:9999 !important}
+
 
 @-webkit-keyframes zoomIn{
     0%{opacity:0;-webkit-transform:scale3d(0.3,0.3,0.3);transform:scale3d(0.3,0.3,0.3)}
@@ -245,6 +244,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 /*MY STUFF BELOW*/
 .proj {margin-top:10px;}
 .proj:after{content:"";width:25px;height:1px;display:inline-block;position:absolute;background:#ef5826;top:100%;left:0}
+.copyright {font-size:14px; padding:10px;}
 
 /*MEDIA QUERIES BELOW*/
 
@@ -289,6 +289,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     .post-social button{margin-bottom:10px;padding:5px 10px!important;font-size:12px!important}
     .blogs-list .item .inner .details .date{font-size:12px}
     .blogs-list .item .inner .details .title{font-size:20px}
+    .copyright {font-size:10px; }
 }
 @media only screen and (max-width:480px){
     ul.sub-data {width:20%; }

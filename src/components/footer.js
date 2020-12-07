@@ -31,7 +31,7 @@ export default class footer extends Component {
                 <FontAwesomeIcon icon={faLinkedinIn} className="icons"  />
                 </a>
               </li>
-              
+              <li className="copyright">2018 © Crezo Construction Inc. | All rights reserved </li>
             </ul></span>
 
          

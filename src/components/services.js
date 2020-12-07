@@ -35,4 +35,3 @@ export default class Services extends Component {
   }
 }
 
-/*Copy all this and turn into a Functional component, using the React-Boostrap collapse thing*/

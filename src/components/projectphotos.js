@@ -60,14 +60,14 @@ export default class Photospage extends Component {
                 ></span>
 
                 <div className="popup-inner">
-                  <i
-                    className="fas fa-times"
+                  <div className="closephoto"
+                    
                     onClick={() => {
                       this.setState({
                         activePopup: false
                       });
                     }}
-                  ></i>
+                  >x</div>
 
                   <Img fluid={this.props.lolphotosource[selectedItem].fluid}
                         alt="popup-img" 
