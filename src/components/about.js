@@ -47,7 +47,7 @@ const Header = ({ data }) => (
                     href={data.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                  ><FontAwesomeIcon icon={faFacebookF} /></a>
+                  ><FontAwesomeIcon icon={faFacebookF} color='#1877F2' className='icons' /></a>
                 </li>
                 
                 
@@ -56,7 +56,7 @@ const Header = ({ data }) => (
                     href={data.linkdin}
                     target="_blank"
                     rel="noopener noreferrer"
-                  ><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                  ><FontAwesomeIcon icon={faLinkedinIn} color='#1877F2' className="icons" /></a>
                 </li>
                 
               </ul>
