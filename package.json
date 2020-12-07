@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Rohit Gupta <rohitguptab33@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "@react-google-maps/api": "^1.13.0",
     "bootstrap": "^4.5.3",
     "disqus-react": "^1.0.10",

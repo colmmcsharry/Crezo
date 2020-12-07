@@ -33,7 +33,7 @@ const Layout = ({ children, header, linkto }) => (
           data={data.contentfulSiteInformation}
           siteTitle={data.contentfulSiteInformation.siteName}
           header={header}
-          
+
           
         />
         <div>

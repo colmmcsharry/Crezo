@@ -16,6 +16,9 @@ import Trades from '../components/trades.js'
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import MyMap from '../components/map.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+
 
 const IndexPage = ({ data }) => (
   <Layout header="home">

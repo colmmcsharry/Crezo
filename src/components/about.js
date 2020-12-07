@@ -1,4 +1,17 @@
 import React from "react";
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+
+
+
+
+
+
+
+
+
+
 
 const Header = ({ data }) => (
   
@@ -14,8 +27,10 @@ const Header = ({ data }) => (
             </h2>
             
             <h2 id="help">
-              We can help <span className="build">build</span> your project
+              We can help <span className="build">build</span> your project 
             </h2>
+            
+            
             
             <div
               dangerouslySetInnerHTML={{
@@ -26,12 +41,22 @@ const Header = ({ data }) => (
             <div className="socials">
               <ul>
                 <li>
-                  jnkj
+                
+                  <a
+                    
+                    href={data.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ><FontAwesomeIcon icon={faFacebookF} /></a>
                 </li>
                 
                 
                 <li>
-                  blah
+                  <a
+                    href={data.linkdin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ><FontAwesomeIcon icon={faLinkedinIn} /></a>
                 </li>
                 
               </ul>
