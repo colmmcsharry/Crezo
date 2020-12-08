@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Img from "gatsby-image"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -69,7 +68,7 @@ const IndexPage = ({ data }) => (
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query AboutQuery {
+  query AbouQuery {
     contentfulAbout {
       name
       welcome
@@ -89,17 +88,12 @@ export const pageQuery = graphql`
       }
       bannerImage {
         fluid(maxWidth: 1800) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyContentfulFluid_withWebp
         }
       }
       
     }
+
    
     allContentfulServices {
       edges {
@@ -122,13 +116,7 @@ export const pageQuery = graphql`
           
           featureImage {
             fluid(maxWidth: 1800) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
+              ...GatsbyContentfulFluid_withWebp
             }
           }
           
@@ -147,13 +135,7 @@ export const pageQuery = graphql`
           }
           avatarImage {
             fluid(maxWidth: 200) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }

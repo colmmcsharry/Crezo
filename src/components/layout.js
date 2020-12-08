@@ -21,13 +21,7 @@ const Layout = ({ children, header, linkto }) => (
               url
             }
             fluid(maxWidth: 250) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyContentfulFluid_withWebp_noBase64
         }
           }
           menus
