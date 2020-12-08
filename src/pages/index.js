@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-
+import Img from "gatsby-image"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,6 +23,7 @@ const IndexPage = ({ data }) => (
     />
     <Banner data={data.contentfulAbout}></Banner>
 
+
     {data.contentfulSiteInformation.menus
       .filter(item => item === "About")
       .map(t => {
@@ -43,7 +44,7 @@ const IndexPage = ({ data }) => (
         return <Services data={data.allContentfulServices}></Services>;
       })}
 
- 
+
 
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Testimonials")
@@ -202,12 +203,11 @@ export const pageQuery = graphql`
       }
     }
     
-    contentfulPhotos {
-      photos {
-        file {
-          url
-        }
-        fluid(maxWidth: 600) {
+
+    contentfulSiteInformation {
+      menus
+      logo {
+        fluid(maxWidth: 250) {
           base64
           aspectRatio
           src
@@ -217,10 +217,12 @@ export const pageQuery = graphql`
           sizes
         }
       }
-    }
-    contentfulSiteInformation {
-      menus
-    }
+
+
+
+
+      
+    } #ends contentful site info
     
   }
 `;

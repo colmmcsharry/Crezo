@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Mymap from './map.js'
+import Img from "gatsby-image";
 
 export default class Contact extends Component {
   render() {
@@ -10,6 +11,7 @@ export default class Contact extends Component {
         <div className="container">
           <div className="section-head">
             <h2 className="text-center">Contact Us</h2>
+             
           </div>
 
   <ul className="details">

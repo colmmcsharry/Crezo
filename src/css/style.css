@@ -42,11 +42,14 @@ ul.social{display:flex;margin:0;padding:0;list-style-type:none;justify-content:c
 
 span.build {border-bottom: 1px solid #ef5826;}
 
+/*#random {position:absolute; top:200px;left:200px; height:200px;width:200px;}*/
 
 h2#help {margin-bottom:30px;font-size:24px;}
 
 .site-header .header-main{display:flex;justify-content:center;align-items:center}
-.site-header .header-main .logo img{width:200px;height:55px;}
+/*.site-header .header-main .logo img{width:200px;height:55px;}*/
+.logo {width:100%; height:100%;}
+
 .site-header .header-main .logo:hover{cursor:pointer;}
 .site-header .header-main .menu{width:90%;display:flex;align-items:center;justify-content:flex-end}
 .site-header .header-main .menu ul{padding:0;display:flex;margin:0;justify-content:flex-end;list-style:none}
@@ -56,6 +59,8 @@ h2#help {margin-bottom:30px;font-size:24px;}
 .site-header .header-main .menu ul li a:hover:after{width:100%;transition:0.5s all}
 .section{padding:50px 0}
 .section:nth-child(even){background:#fff}
+
+.logocontainer {max-width:200px;}
 
 .about-details .sub-position{margin-bottom:30px;display:block}
 
@@ -259,7 +264,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     .blog-post .feature-img{height:400px}
 }
 @media only screen and (max-width:767px){
-    .site-header .header-main .logo img{width:150px;height:45px;}
+    /*.site-header .header-main .logo img{width:150px;height:45px;}*/
     .site-header .header-main{flex-wrap:wrap;align-items:center;justify-content:flex-start}
     .site-header .header-main .menu{position:fixed;top:0;right:-100%;bottom:0;width:100%;z-index:1;background:#000000c9;z-index:999;padding:80px 0 0 0;-webkit-transition:0.3s all;transition:0.3s all}
     .site-header.active .logo{z-index:9999}
@@ -277,7 +282,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     .site-header .header-main .menu ul li a{padding:6px 20px;display:inline-block;width:100%;border-bottom:1px solid #fff;box-sizing:border-box;font-size:14px}
 
 /*.homebutton {margin-top:17px;}*/
-.site-header .header-main .menu ul li:first-of-type {margin-top:7px}
+.site-header .header-main .menu ul li:first-of-type {margin-top:17px}
 
 }
 @media only screen and (max-width:568px){
@@ -292,6 +297,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     .blogs-list .item .inner .details .date{font-size:12px}
     .blogs-list .item .inner .details .title{font-size:20px}
     .copyright {font-size:10px; }
+    .logo {max-width:50%; }
 }
 
 @media only screen and (max-width:480px){

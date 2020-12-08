@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React, { Component } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import Img from "gatsby-image";
 
 export default class Header extends Component {
   constructor(props) {
@@ -34,7 +35,8 @@ export default class Header extends Component {
             <div className="logo" onClick={this.gohome}>
               <Link to="/">
                 {data.logo.file.url ? (
-                  <img src={data.logo.file.url} alt="logo" />
+                  // <img src={data.logo.file.url} alt="logo" />
+                  <Img fluid={data.logo.fluid} alt="logo" style={{maxWidth:'250px', maxHeight:'80px', padding:'0', margin:'0' }} />
 
                 ) : (
                   <span>{data.siteName}</span>
@@ -43,6 +45,9 @@ export default class Header extends Component {
               </Link>
             </div>
             
+
+
+
             <div
               className="responsive-menu"
               onClick={() => {
@@ -113,6 +118,7 @@ export default class Header extends Component {
                     });
                   }}>
                           <span>Services</span>
+                          
                         </ScrollLink>
                         </li>
                       );

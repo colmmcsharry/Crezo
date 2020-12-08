@@ -20,6 +20,15 @@ const Layout = ({ children, header, linkto }) => (
             file {
               url
             }
+            fluid(maxWidth: 250) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
           }
           menus
         }
