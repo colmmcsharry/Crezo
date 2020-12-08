@@ -24,7 +24,7 @@ const [open, setOpen] = useState(false);
         aria-expanded={open}
         className="reveal"
       >
-        Reveal Form 
+        Reveal Form  
       </button>
           </div>
 

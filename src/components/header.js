@@ -81,6 +81,23 @@ export default class Header extends Component {
                       );
                     })}
 
+
+                   {data.menus
+                    .filter(item => item === "Projects")
+                    .map(t => {
+                      return (
+                        <li>
+                          <ScrollLink to="Projects" offset={-70} smooth={true} duration={500} onClick={() => {
+                    this.setState({
+                      menu: false
+                    });
+                  }}>
+                          <span>Projects</span>
+                          </ScrollLink>
+                        </li>
+                      );
+                    })} 
+
                   {data.menus
                     .filter(item => item === "Services")
                     .map(t => {
@@ -97,21 +114,6 @@ export default class Header extends Component {
                       );
                     })}
 
-                  {data.menus
-                    .filter(item => item === "Projects")
-                    .map(t => {
-                      return (
-                        <li>
-                          <ScrollLink to="Projects" offset={-70} smooth={true} duration={500} onClick={() => {
-                    this.setState({
-                      menu: false
-                    });
-                  }}>
-                          <span>Projects</span>
-                          </ScrollLink>
-                        </li>
-                      );
-                    })}
 
             
                   {data.menus

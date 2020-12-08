@@ -120,6 +120,8 @@ form textarea{height:100px}
 form button, .reveal {text-indent:-10px;background:#333;color:#fff;box-shadow:0 10px 50px rgba(58,58,58,.26);line-height:1px;padding:23px;text-transform:capitalize;-webkit-transition:all .3s linear;transition:all .3s linear;min-width:186px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;font-size:15px;border:none;display:inline-block}
 form>div{margin-bottom:15px}
 
+.reveal:after {content:"\2304"; top:11px; position:relative; left:-40px;}
+
 .extra-content li {margin-bottom:10px;}
 
 .best {margin:10px 0px; font-size:1.1em;}
@@ -215,7 +217,7 @@ pre{margin-bottom:0}
 .rg-popup{position:fixed;top:0;bottom:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:center}
 .rg-popup .popup-inner{width:900px;position:relative;max-height:90%;max-width:100%;background:#fff;-webkit-animation-name:zoomIn;animation-name:zoomIn;-webkit-animation-duration:0.5s;animation-duration:0.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .rg-popup .popup-layer{position:fixed;top:0;bottom:0;left:0;right:0;height:100%;width:100%;background:#000000c9;cursor:pointer}
-.rg-popup .popup-inner img{width:100%;height:auto;max-width:100%}
+.rg-popup .popup-inner img{width:100%;height:auto;max-width:100%; max-height:92vh;}
 .closephoto{position:absolute;top:10px;right:10px;background:#333333bd;color:#fff;font-size: 20px;padding:8px;cursor:pointer;z-index:9999 !important}
 
 
@@ -312,9 +314,8 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
   margin-left: -1em;
 }
 
-.banner .banner-details .sub-data li:after {display:none;}
+.banner .banner-details .sub-data li:after {display:none;}}
 
-}
 
 @media only screen and (max-width:380px){
     iframe {max-width:95%;}
