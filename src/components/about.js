@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
@@ -43,7 +42,7 @@ const Header = ({ data }) => (
                 <li>
                 
                   <a
-                    
+                    aria-label="Facebook symbol"
                     href={data.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -53,6 +52,7 @@ const Header = ({ data }) => (
                 
                 <li>
                   <a
+                    aria-label="Linkedin symbol"
                     href={data.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"

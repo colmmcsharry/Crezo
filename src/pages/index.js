@@ -9,13 +9,9 @@ import About from "../components/about";
 import Services from "../components/services.js";
 import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
-import Photos from "../components/photos";
 import Projects from '../components/projects.js'
-import Readmore from '../components/readmore.js'
 import Trades from '../components/trades.js'
-import Button from 'react-bootstrap/Button';
-import Collapse from 'react-bootstrap/Collapse';
-import MyMap from '../components/map.js'
+
 
 
 

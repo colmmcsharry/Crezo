@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React, { Component } from "react";
-import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default class Header extends Component {
   constructor(props) {
@@ -91,7 +91,11 @@ export default class Header extends Component {
                     this.setState({
                       menu: false
                     });
-                  }}>
+                  }} onKeyDown={() => {
+                    this.setState({
+                      menu: false
+                    });
+                  }} >
                           <span>Projects</span>
                           </ScrollLink>
                         </li>

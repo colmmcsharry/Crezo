@@ -8,17 +8,7 @@ import Photospage from '../components/projectphotos.js'
 export default class projectPost extends Component {
   render() {
     const data = this.props.data.contentfulProjects;
-
-    const siteurl = this.props.data.contentfulSiteInformation.siteUrl + "/";
     
-    const socialConfigss = {
-      site: {
-        siteMetadata: { siteurl }
-      },
-      title: data.title,
-      slug: data.slug
-    };
-
     return (
       <Layout>
         <SEO

@@ -6,7 +6,6 @@ import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 export default class footer extends Component {
   render() {
-  	const { data } = this.props;
     return (
       <div className="site-footer" id="footer">
       

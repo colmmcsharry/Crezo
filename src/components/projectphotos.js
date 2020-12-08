@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import Img from "gatsby-image";
-import { graphql } from "gatsby";
-
-import Layout from "../components/layout";
-import SEO from "../components/seo";
 
 export default class Photospage extends Component {
   constructor(props) {
@@ -15,7 +11,6 @@ export default class Photospage extends Component {
   }
 
   render() {
-    const { data } = this.props;
     const { activePopup, selectedItem } = this.state;
 
     return (
@@ -30,6 +25,7 @@ export default class Photospage extends Component {
                   <li key={index} className="item">
                     <div
                       className="inner"
+                      role="pic"
                       onClick={() => {
                         this.setState({
                           activePopup: true,
@@ -61,8 +57,7 @@ export default class Photospage extends Component {
 
                 <div className="popup-inner">
                   <div className="closephoto"
-                    
-                    onClick={() => {
+                    role="button"                    onClick={() => {
                       this.setState({
                         activePopup: false
                       });

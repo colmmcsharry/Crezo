@@ -27,9 +27,9 @@ export default class Contact extends Component {
               </li>
               <li>
                 <strong>Email</strong>
-                <p>
+                
                   <p>{data.email}</p>
-                </p>
+                
               </li>
             </ul>
 
