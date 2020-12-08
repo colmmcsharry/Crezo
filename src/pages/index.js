@@ -100,27 +100,7 @@ export const pageQuery = graphql`
       }
       
     }
-    contentfulProject {
-      id
-      status
-      image {
-        file {
-          url
-        }
-        fluid {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-        }
-      }
-
-
-
-    }
+   
     allContentfulServices {
       edges {
         node {
@@ -141,7 +121,7 @@ export const pageQuery = graphql`
           slug
           
           featureImage {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 1800) {
               base64
               aspectRatio
               src
@@ -180,49 +160,11 @@ export const pageQuery = graphql`
       }
     }
     
-    allContentfulProject {
-      edges {
-        node {
-          client
-          architect
-          image {
-            file {
-          url
-        }
-            fluid(maxWidth: 600) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-            }
-          }
-        }
-      }
-    }
     
 
     contentfulSiteInformation {
       menus
-      logo {
-        fluid(maxWidth: 250) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-        }
-      }
-
-
-
-
-      
-    } #ends contentful site info
+    } 
     
   }
 `;
