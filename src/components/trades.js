@@ -33,12 +33,10 @@ const [open, setOpen] = useState(false);
 
   <div className="myclass" id="reveal">
 
-          <form 
-            // action={`https://formspree.io/f/xleowbpw`}
-            name="tradesform"
-            method="POST"
-            data-netlify="true">
-
+          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="tradesform" action={`https://formspree.io/f/xleowbpw`}>
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+            
             <div>
               <label>
                 Your Name *: <input type="text" name="name" required />

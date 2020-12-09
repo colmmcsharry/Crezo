@@ -60,34 +60,8 @@ const IndexPage = ({ data }) => (
         return <Contact data={data.contentfulAbout}></Contact>; 
       })}
 
-      <Trades />
-
-      <form
-            action='thanks'
-            name="contactform3"
-            method="POST"
-            data-netlify="true"
-            >
-            <div>
-              <label>
-                Your Name: <input type="text" name="name" required />
-              </label>
-            </div>
-            <div>
-              <label>
-                Your Email: <input type="email" name="email" required />
-              </label>
-            </div>
-            <div>
-              <label>
-                Message: <textarea name="message" required></textarea>
-              </label>
-            </div>
-            <div>
-              <button type="submit">Send</button>
-            </div>
-          </form>
-
+      <Trades /> 
+{/*might have to turn trades into like the above ones, so it can be activated/deactivated, no need for props.*/}
   </Layout>
 );
 
