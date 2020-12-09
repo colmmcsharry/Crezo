@@ -63,10 +63,10 @@ const IndexPage = ({ data }) => (
       <Trades />
 
       <form
-            action='thank-you'
+            action='thanks'
             name="contactform3"
             method="POST"
-            netlify
+            data-netlify="true"
             >
             <div>
               <label>
