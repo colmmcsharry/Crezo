@@ -34,8 +34,8 @@ const [open, setOpen] = useState(false);
   <div className="myclass" id="reveal">
 
           <form 
-            action={`https://formspree.io/f/xleowbpw`}
-            name="trades"
+            // action={`https://formspree.io/f/xleowbpw`}
+            name="tradesform"
             method="POST"
             data-netlify="true">
 
