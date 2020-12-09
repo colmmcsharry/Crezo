@@ -35,7 +35,7 @@ const [open, setOpen] = useState(false);
 
           <form 
             action={`https://formspree.io/f/xleowbpw`}
-            name="contact"
+            name="trades"
             method="POST"
             data-netlify="true">
 
@@ -56,7 +56,7 @@ const [open, setOpen] = useState(false);
             </div>
             <div>
               <label>
-                Scope of Work *: <input type="text" name="company" required />
+                Scope of Work *: <input type="text" name="work" required />
               </label>
             </div>
 
