@@ -36,7 +36,8 @@ const [open, setOpen] = useState(false);
           <form 
             action={`https://formspree.io/f/xleowbpw`}
             name="contact"
-            method="POST">
+            method="POST"
+            data-netlify="true">
 
             <div>
               <label>
