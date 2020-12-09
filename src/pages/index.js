@@ -60,8 +60,13 @@ const IndexPage = ({ data }) => (
         return <Contact data={data.contentfulAbout}></Contact>; 
       })}
 
-      <Trades /> 
-{/*might have to turn trades into like the above ones, so it can be activated/deactivated, no need for props.*/}
+      {data.contentfulSiteInformation.menus
+      .filter(item => item === "Contact")
+      .map(t => {
+        return <Trades /> ; 
+      })}
+      
+
   </Layout>
 );
 

@@ -35,11 +35,9 @@ export default class Contact extends Component {
               </li>
             </ul>
 
-          {/*the input types hidden are needed for Gatsby for some reason*/}
-            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contactform">
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
-            
+          
+            <form method="post" name="contactform" action={`https://formspree.io/f/xleowbpw`}>
+             
             <div>
               <label>
                 Your Name: <input type="text" name="name" required />
