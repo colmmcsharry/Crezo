@@ -87,7 +87,7 @@ export const pageQuery = graphql`
         }
       }
       bannerImage {
-        fluid(maxWidth: 1800) {
+        fluid(maxWidth: 2000) {
           ...GatsbyContentfulFluid_withWebp
         }
       }

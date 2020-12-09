@@ -62,13 +62,7 @@ export const pageQuery = graphql`
       slug
       featureImage {
         fluid(maxWidth: 2000) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyContentfulFluid_withWebp
         }
       }
       description {
@@ -79,13 +73,7 @@ export const pageQuery = graphql`
 
       pics {
         fluid(maxWidth: 2000) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyContentfulFluid_withWebp
         }
         file {
           url
