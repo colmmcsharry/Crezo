@@ -36,7 +36,7 @@ export default class Contact extends Component {
             </ul>
 
           <form
-            action={`https://formspree.io/f/xleowbpw`}
+            // action={`https://formspree.io/f/xleowbpw`}
             name="contact"
             method="POST"
             data-netlify="true"
