@@ -7,7 +7,7 @@
   <h1 align="center">
     RG-Portfolio
   </h1>
-  <img src="https://github.com/rohitguptab/rg-portfolio/blob/master/docs/screenshot.jpg" />
+  <img src="![screenshot](https://user-images.githubusercontent.com/31823017/101570576-9819d800-398b-11eb-881f-6dd509f1efbf.jpg) />
 
 Kick-off your Portfolio website with RG-Portfolio gatsby starter. We have used [Gatsby](https://www.gatsbyjs.org/) + [Contenful](https://www.gatsbyjs.org/packages/gatsby-source-contentful/?=Contenful).
 
