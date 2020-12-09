@@ -7,5 +7,5 @@
   <h1 align="center">
     Crezo Site
   </h1>
-  <img src="https://github.com/rohitguptab/rg-portfolio/blob/master/docs/screenshot.jpg" />
+  <img src="![screenshot](https://user-images.githubusercontent.com/31823017/101570576-9819d800-398b-11eb-881f-6dd509f1efbf.jpg) />
 
