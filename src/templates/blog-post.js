@@ -14,9 +14,7 @@ export default class projectPost extends Component {
         <SEO
           title={data.title}
           keywords={[
-            `Rohit Gupta`,
-            `Frontend Developer`,
-            `Developer`,
+            `Crezo Construction`, `Projects`, `Building`, `Architect`, `Inustrial`,
             `${data.title}`
           ]}
         />

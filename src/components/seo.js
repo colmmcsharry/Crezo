@@ -36,10 +36,7 @@ function SEO({ description, lang, meta, keywords, title, data }) {
                 name: `twitter:card`,
                 content: `summary`
               },
-              {
-                name: `twitter:creator`,
-                content: data.contentfulSiteInformation.twiteerHandle
-              },
+              
               {
                 name: `twitter:title`,
                 content: title

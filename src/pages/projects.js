@@ -12,7 +12,7 @@ export default class Projectspage extends Component {
       <Layout>
         <SEO
           title="Projects"
-          keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`, `Projects`]}
+          keywords={[`Crezo`, `Construction`, `Developer`, `Projects`, `Builder`]}
         />
         <div className="site-container blogs-page" id="Projectspage">
           <div className="container">
@@ -64,13 +64,7 @@ export const pageQuery = graphql`
           slug
           featureImage {
             fluid(maxWidth: 1500) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
+              ...GatsbyContentfulFluid_withWebp
             }
           }
           
