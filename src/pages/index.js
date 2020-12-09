@@ -63,7 +63,7 @@ const IndexPage = ({ data }) => (
       <Trades />
 
       <form
-            // action={`https://formspree.io/f/xleowbpw`}
+            action='thank-you'
             name="contactform3"
             method="POST"
             netlify

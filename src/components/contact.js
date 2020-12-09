@@ -35,12 +35,11 @@ export default class Contact extends Component {
               </li>
             </ul>
 
-          <form
-            // action={`https://formspree.io/f/xleowbpw`}
-            name="contactform"
-            method="POST"
-            netlify
-            >
+          
+            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contactform">
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+            
             <div>
               <label>
                 Your Name: <input type="text" name="name" required />
@@ -60,6 +59,13 @@ export default class Contact extends Component {
               <button type="submit">Send</button>
             </div>
           </form>
+
+
+
+
+
+
+
 
           <Mymap />
 
