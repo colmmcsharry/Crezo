@@ -1,6 +1,6 @@
 var path = require("path");
 
-
+/*remember that projects were originally blogs*/
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   return new Promise((resolve, reject) => {

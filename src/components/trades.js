@@ -52,14 +52,14 @@ const [open, setOpen] = useState(false);
             </div>
             <div>
               <label>
-                Scope of Work *: <input type="text" name="work" required />
+                Scope of Work *: <input type="text" name="scope-of-work" required />
               </label>
             </div>
 
 
             <div>
               <label>
-                List of Recent Projects: <textarea name="listprojects" ></textarea>
+                List of Recent Projects: <textarea name="list-of-projects" ></textarea>
               </label>
             </div>
 
