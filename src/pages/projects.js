@@ -12,7 +12,7 @@ export default class Projectspage extends Component {
       <Layout>
         <SEO
           title="Projects"
-          keywords={[`Crezo`, `Construction`, `Developer`, `Projects`, `Builder`]}
+          keywords={[`Crezo`, `Construction`, `Developer`, `Projects`, `Builder`, `Burnaby`, `Vancouver`]}
         />
         <div className="site-container blogs-page" id="Projectspage">
           <div className="container">
