@@ -16,10 +16,10 @@ import Trades from '../components/trades.js'
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
-    <SEO
+   {/* <SEO
       title={data.contentfulAbout.welcome}
-      keywords={[`Crezo Construction`, `Projects`, `Building`, `Architect`, `Inustrial`]}
-    />
+      keywords={[`Crezo` `Construction`, `Projects`, `Building`, `Architect`, `Industrial`, `Burnaby` , `Vancouver`]}
+    />*/}
     <Banner data={data.contentfulAbout}></Banner>
 
 
