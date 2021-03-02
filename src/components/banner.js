@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 
+
 export default function Banner ({data}) {
   
     return (
@@ -20,9 +21,16 @@ export default function Banner ({data}) {
             
             <ul className="sub-data">
               {data.bannerList.map((item, index) => {
-                return <li key={index}>{item}</li>;
-              })}
+                return <React.Fragment>
+
+                 <li key={index}>{item}  </li>
+                
+                </React.Fragment>; 
+              })} 
+
+              
             </ul>
+
           </div>
         </div>
       </div>

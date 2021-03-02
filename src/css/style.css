@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700,700i&display=swap');
 
 
+html {
+    overflow-x:hidden;
+}
 *{font-family:Verdana, 'Trebuchet MS',sans-serif}
 img{max-width:100%}
-.site-header{background:#333333b8;position:fixed;top:0;left:0;right:0;z-index:900;padding:20px 0}
+.site-header{background:#333333b8;position:fixed;top:0;left:0;right:0;z-index:902;padding:20px 0}
 .site-header *{color:#fff}
 a{color:#ef5826;}
 h2{font-size:28px;line-height:34px;color:#363636}
@@ -25,10 +27,20 @@ body{margin:0;background:#fafafe}
 .banner .banner-details .sub-data li:after{content:"";width:6px;height:6px;display:inline-block;background:#fff;position:absolute;top:50%;margin-top:-3px;right:-3px;border-radius:50%}
 .banner .banner-details .sub-data li:last-child:after{display:none}
 
+.iconlist {display:inline-block;border:1px solid red;height:4rem; width:4rem;margin:0 2rem;}
+
+ul.sub-data{flex-wrap:wrap;justify-content: center; }
 
 
-ul.sub-data{flex-wrap:wrap;justify-content: center;}
-
+ul
+.listimg {
+    height:34px !important;
+     width:34px !important; 
+     display:block; 
+     position:
+     absolute;
+        left:50%;
+        transform:translate(-50%);}
 /*these are the ones in the footer*/
 ul.social{display:flex;margin:0;padding:0;list-style-type:none;justify-content:center}
  .social li{margin:0 10px;}
@@ -55,7 +67,45 @@ ul.social{display:flex;margin:0;padding:0;list-style-type:none;justify-content:c
 
 .logocontainer {max-width:200px;}
 
+
 .about-details .sub-position{margin-bottom:30px;display:block}
+
+#aboutgridwrap {
+    display:grid;
+    grid-template-columns:3fr 2fr;
+    grid-gap:50px;
+    width:150%;
+    place-items:center;
+
+   }
+
+.abouttext {
+    max-width:100%;
+}
+
+#sketch{
+    display:grid;
+    place-items:center;
+    position:relative;
+}
+
+
+#sketch:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background: radial-gradient(ellipse, rgba(255,255,255,.3)100%, white);
+    width:100%;
+    height:100%;
+    z-index:900;
+}
+
+
+.sketchimg {
+border-radius: 0px 0px 40px 40px;
+
+}
 
 .project-div {margin: 200px 0;}
 .projects-list {list-style:none; }
@@ -63,6 +113,7 @@ ul.social{display:flex;margin:0;padding:0;list-style-type:none;justify-content:c
 .details li{display:flex;align-items:center;margin-bottom:10px}
 .details li p{margin:0}
 .details li strong{width:160px}
+
 
 
 .socials ul{margin:0;padding:0;list-style:none;display:flex}
@@ -74,13 +125,54 @@ ul.social{display:flex;margin:0;padding:0;list-style-type:none;justify-content:c
 .socials ul li a:hover{color:#fff}
 
 
-.service-main{text-align:center;box-shadow:3px 3px 8px 2px #0000000a;padding:30px 30px;transition:0.5s all;background:#fff}
-.section:nth-child(even) .service-main{background:#fafafe}
-.service-main:hover{box-shadow:3px 3px 8px 2px #0000002b;transition:0.5s all}
+.servicons {height:100px; width:150px; margin:15px;}
+.servicons:1st-child {border:5px solid red;}
+
+.service-main{text-align:center;box-shadow:3px 3px 10px 2px #333;padding:30px 30px;transition:0.5s all;background:#fff;}
+
+.servrow {border:2px solid transparent;
+padding-left:5rem;
+padding-right:5rem;
+margin:0 auto;
+}
+
+#servtitle {margin-top:1rem;
+margin-bottom:110px;}
+
+
+/*this is the span element that the background image comes from*/
+#lol {height:480px;
+    content:'';
+width:100vw;
+position:absolute;
+background-image:url('../images/cranesbg.jpg');
+background-attachment:fixed;
+transform:translateY(90px);
+background-repeat:repeat;
+background-position:center bottom;
+background-size:100% 100%;
+overflow:hidden;
+}
+
+#lol::after{content:""; 
+position: absolute;
+    background-color: #8a0027;
+    opacity:.7;
+    background-image:url('https://www.transparenttextures.com/patterns/3px-tile.png');
+    background-attachment:fixed; 
+    filter:brightness(50%);    
+width:100%;
+height:100%;
+}
 
 
 
-.readmorelink {font-size:22px;cursor:pointer;}
+
+.servh2 {color:#333;
+ }
+
+.readmorelink {font-size:22px;cursor:pointer;
+}
 
 .grow { 
 transition: all .2s ease-in-out; 
@@ -96,6 +188,8 @@ border:0 !important;
 }
 
 
+
+#Testimonials {margin-top:100px;}
 .slick-slider .slick-list div{display:flex;width:100%;text-align:center}
 .slick-slider .slick-arrow{display:none!important}
 .slick-dots{padding:0;text-align:center;position:absolute;bottom:0;left:50%;-webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0);-ms-transform:translate(-50%,0)}
@@ -253,6 +347,28 @@ h2#help {margin-bottom:30px;font-size:24px;}
 
 /*MEDIA QUERIES BELOW*/
 
+@media only screen and (min-width:1200px){
+    #Contact::after{
+        content:".";
+        left:40vw;
+        position:absolute;
+        display:inline-block;
+        background-image:url('../images/construct.jpg');
+        background-size:contain;
+        width:500px;
+        transform:translateY(-15px);
+        opacity:0.5;
+        height:350px;
+        z-index:-1;
+
+    }
+
+
+
+
+    iframe{z-index:90 !important}
+}
+
 @media only screen and (max-width:991px){
     .blogs-list .item{width:50%!important}
     .blogs-list .item .inner .gatsby-image-wrapper{height:200px!important}
@@ -260,8 +376,34 @@ h2#help {margin-bottom:30px;font-size:24px;}
     .work-list .item{width:50%}
     .photos-page-list .item{width:50%}
     .blog-post .feature-img{height:400px}
+
+#aboutgridwrap {
+    display:block;
+    width:100%;
+   }
+
+#lol {height:40vh;}
+
+
+#sketch{
+    display:grid;
+    place-items:center;
+    margin:3rem 0;
 }
+
+#sketch > img {
+    width:100%;
+}
+
+.service-main{text-align:center;box-shadow:3px 3px 6px 2px rgba(0,0,0,0.3);}
+
+.servrow {padding:0;
+border:none;}
+}
+
 @media only screen and (max-width:767px){
+
+    #Testimonials {margin-top:20px;}
     /*.site-header .header-main .logo img{width:150px;height:45px;}*/
     .site-header .header-main{flex-wrap:wrap;align-items:center;justify-content:flex-start}
     .site-header .header-main .menu{position:fixed;top:0;right:-100%;bottom:0;width:100%;z-index:1;background:#000000c9;z-index:999;padding:80px 0 0 0;-webkit-transition:0.3s all;transition:0.3s all}
@@ -274,6 +416,8 @@ h2#help {margin-bottom:30px;font-size:24px;}
     .site-header .header-main .menu ul{flex-wrap:wrap;flex-direction:column;width:100%;height:100%;justify-content:flex-start}
     .site-header .header-main .menu ul li{margin:0}
     .container{max-width:100%}
+
+    .listimg {display:inline-block; position:relative; left:0; margin:0;}
     
     h2, #slogan{font-size:24px;line-height:30px}
     .responsive-menu{display:flex;position:absolute; right:20px;}
@@ -281,7 +425,10 @@ h2#help {margin-bottom:30px;font-size:24px;}
 
 /*.homebutton {margin-top:17px;}*/
 .site-header .header-main .menu ul li:first-of-type {margin-top:17px}
-
+#lol {display:none;}
+#servtitle{
+    margin-bottom:20px;
+}
 }
 @media only screen and (max-width:568px){
     .photos-page-list .item{width:100%}

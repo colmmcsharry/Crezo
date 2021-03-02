@@ -1,24 +1,39 @@
 import React, { Component } from "react";
 import Readmore from './readmore.js'
+import { graphql } from "gatsby";
+import BackgroundSection from './gatsbybg.js'
+
 
 
 export default class Services extends Component {
-  render() {
+
+
+  render(
+
+
+
+
+    ) {
     const { data } = this.props;
     return (
-      <div className="service section" id="Services">
+      <React.Fragment>
+ 
+      <div className="service section" id="Services"> <BackgroundSection/>
         <div className="container">
-          <div className="section-head">
-            <h2>Services</h2>
+          <div className="section-head" id="servtitle">
+            <h2 className="servh2">Services</h2>
           </div>
-          <div className="row">
+         
+          <div className="row servrow">
+          
             {data.edges.map((item, index) => {
               return (
                 <div key={index} className="col-md-6 mb-3">
                   <div className="service-main">
                   
                     <h3>{item.node.title}</h3>
-                    <Readmore shortcontent= {item.node.preview} longcontent= <div
+                    <img src={item.node.iconlink} className="servicons"/>
+                    <Readmore shortcontent= {item.node.preview} longcontent= <div className="long"
                       dangerouslySetInnerHTML={{
                         __html: item.node.description.childMarkdownRemark.html
                       }}
@@ -29,8 +44,11 @@ export default class Services extends Component {
               );
             })}
           </div>
-        </div>
+          </div>
+         
+        
       </div>
+      </React.Fragment>
     );
   }
 }

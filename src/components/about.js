@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-
+import Img from "gatsby-image";
 
 
 
@@ -28,15 +28,27 @@ const Header = ({ data }) => (
             <h2 id="help">
               We can help <span className="build">build</span> your project 
             </h2>
-            
-            
-            
-            <div
+
+    <div id="aboutgridwrap">
+            <div className="abouttext"
               dangerouslySetInnerHTML={{
                 __html: data.description.childMarkdownRemark.html
               }}
+
+
             />
-            
+            <div id="sketch">
+            <Img
+          fixed={data.aboutimg.fixed}
+          objectFit="contain"
+           className="sketchimg"
+           
+          loading="eager"
+
+        />
+            </div>
+
+            </div>
             <div className="socials">
               <ul>
                 <li>
@@ -60,6 +72,8 @@ const Header = ({ data }) => (
                 </li>
                 
               </ul>
+
+            
             </div>
           </div>
         </div>

@@ -96,8 +96,18 @@ export const pageQuery = graphql`
           ...GatsbyContentfulFluid_withWebp
         }
       }
-      
-    }
+
+       aboutimg {
+        fixed(width: 300) {
+    base64
+    width
+    height
+    src
+    srcSet
+}
+       }
+
+  }
 
    
     allContentfulServices {
@@ -105,6 +115,12 @@ export const pageQuery = graphql`
         node {
           title
           preview
+          iconlink
+          bgimage {
+              fluid(maxWidth: 2000) {
+          ...GatsbyContentfulFluid_withWebp
+        }
+          }
           description {
             childMarkdownRemark {
               html
