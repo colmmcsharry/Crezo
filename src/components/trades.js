@@ -17,11 +17,11 @@ const [open, setOpen] = useState(false);
             <p>Thank you for your interest in working with us <br/> </p>
             <p>Please submit the following information</p>
 
-            <button
+            <button 
         onClick={() => setOpen(!open)}
         aria-controls="reveal"
         aria-expanded={open}
-        className="reveal"
+        className="reveal tradesbut"
       >
         Reveal Form  
       </button>

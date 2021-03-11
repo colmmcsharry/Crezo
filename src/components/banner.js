@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import touch from '../images/touch.png'
 
 
 export default function Banner ({data}) {
@@ -30,9 +31,12 @@ export default function Banner ({data}) {
 
               
             </ul>
-
+           {/* <button id="cta">Get in Touch!</button>*/}
+           
           </div>
+
         </div>
+         <img src={touch} id="sign"/>
       </div>
     );
   

@@ -1,7 +1,7 @@
 
 
 html {
-    overflow-x:hidden;
+    overflow-x:hidden !important;
 }
 *{font-family:Verdana, 'Trebuchet MS',sans-serif}
 img{max-width:100%}
@@ -31,6 +31,14 @@ body{margin:0;background:#fafafe}
 
 ul.sub-data{flex-wrap:wrap;justify-content: center; }
 
+#sign {height:200px; width:100px; position:absolute; left:48%; bottom:-20px; z-index:777;}
+
+#cta {top:50px;position:relative;
+font-family:Verdana;
+font-weight:bold;
+border:2px solid black;
+background-color:yellow;
+}
 
 ul
 .listimg {
@@ -60,7 +68,7 @@ ul.social{display:flex;margin:0;padding:0;list-style-type:none;justify-content:c
 .site-header .header-main .menu ul{padding:0;display:flex;margin:0;justify-content:flex-end;list-style:none}
 .site-header .header-main .menu ul li{margin:0 10px}
 .site-header .header-main .menu ul li a{position:relative;color:#fff;overflow:hidden;text-decoration:none}
-.site-header .header-main .menu ul li a:after{content:"";width:0;height:1px;position:absolute;bottom:-3px;left:0;background:#fff;transition:0.5s all}
+.site-header .header-main .menu ul li a:after{content:"";width:0;height:1px;position:absolute;bottom:-4px;left:0;background:#D64229;transition:0.5s all}
 .site-header .header-main .menu ul li a:hover:after{width:100%;transition:0.5s all}
 .section{padding:50px 0}
 .section:nth-child(even){background:#fff}
@@ -124,55 +132,60 @@ border-radius: 0px 0px 40px 40px;
 .socials ul li a:hover:after{top:0}
 .socials ul li a:hover{color:#fff}
 
+/*Services section begins*/
 
-.servicons {height:100px; width:150px; margin:15px;}
-.servicons:1st-child {border:5px solid red;}
-
-.service-main{text-align:center;box-shadow:3px 3px 10px 2px #333;padding:30px 30px;transition:0.5s all;background:#fff;}
-
-.servrow {border:2px solid transparent;
-padding-left:5rem;
-padding-right:5rem;
-margin:0 auto;
-}
-
-#servtitle {margin-top:1rem;
-margin-bottom:110px;}
-
-
-/*this is the span element that the background image comes from*/
-#lol {height:480px;
-    content:'';
-width:100vw;
-position:absolute;
-background-image:url('../images/cranesbg.jpg');
-background-attachment:fixed;
-transform:translateY(90px);
-background-repeat:repeat;
-background-position:center bottom;
-background-size:100% 100%;
-overflow:hidden;
-}
-
-#lol::after{content:""; 
-position: absolute;
-    background-color: #8a0027;
-    opacity:.7;
-    background-image:url('https://www.transparenttextures.com/patterns/3px-tile.png');
-    background-attachment:fixed; 
-    filter:brightness(50%);    
-width:100%;
-height:100%;
-}
-
-
-
+#servtitle {
+margin-bottom:13px;}
 
 .servh2 {color:#333;
  }
 
-.readmorelink {font-size:22px;cursor:pointer;
+.servicons {height:100px; width:150px; margin:15px; backdrop-filter:blur(3px);}
+
+.servrow {border:2px solid transparent;
+padding-left:5rem;
+padding-right:5rem;
 }
+
+.service.section {
+margin:0 auto;
+display:grid;
+place-items:center;}
+
+
+/*this is the background cranes*/
+.row.servrow {    
+    position:relative;
+    padding:19% 5%;
+    background-image:url('../images/cranesmobile.jpg');
+background-attachment:scroll;
+background-repeat:no-repeat;
+background-size:cover;
+width:100vw;
+}
+
+.row.servrow:before {
+    content:""; 
+position: absolute;
+    background-color: #8a0027;
+    opacity:.6;
+    background-image:url('https://www.transparenttextures.com/patterns/3px-tile.png');
+    background-attachment:scroll; 
+    filter:brightness(50%);    
+    left:0;
+    top:0;
+
+width:100%;
+height:100%;
+}
+
+.service-main{text-align:center; color:white; border:2px solid white;box-shadow:3px 3px 10px 2px #333;padding:
+    5vw 5vh;transition:0.5s all;background:transparent; backdrop-filter:blur(1px) brightness(80%)}
+
+
+.readmorelink {font-size:22px;cursor:pointer; color:white;
+}
+
 
 .grow { 
 transition: all .2s ease-in-out; 
@@ -182,12 +195,14 @@ transition: all .2s ease-in-out;
 transform: scale(1.1); 
 }
 
-.myclass {border:1px solid red;
-margin:0 !important;
-border:0 !important;
-}
+
+/*Services section ends*/
 
 
+#testimh2{
+text-align:left !important;
+display:block;
+margin-bottom:60px;}
 
 #Testimonials {margin-top:100px;}
 .slick-slider .slick-list div{display:flex;width:100%;text-align:center}
@@ -209,9 +224,10 @@ form label{width:100%}
 form input,
 form textarea{display:block;width:100%;padding:10px 15px;box-sizing:border-box;outline:none;resize:none;background:#fafafe!important;z-index:2;position:relative;line-height:18px;font-size:16px;-webkit-transition:none 0s ease 0s;transition:none 0s ease 0s;border:1px solid hsla(0,0%,80%,.37);margin:10px 0 0}
 form textarea{height:100px}
-form button, .reveal {text-indent:-10px;background:#333;color:#fff;box-shadow:0 10px 50px rgba(58,58,58,.26);line-height:1px;padding:23px;text-transform:capitalize;-webkit-transition:all .3s linear;transition:all .3s linear;min-width:186px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;font-size:15px;border:none;display:inline-block}
+form button, .reveal {background:#333;color:#fff;box-shadow:0 10px 50px rgba(58,58,58,.26);line-height:1px;padding:23px;text-transform:capitalize;-webkit-transition:all .3s linear;transition:all .3s linear;min-width:186px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;font-size:15px;border:none;display:inline-block}
 form>div{margin-bottom:15px}
 
+.tradesbut {padding-bottom:30px; text-align:center;}
 .reveal:after {content:"\2304"; top:11px; position:relative; left:-40px;}
 
 .extra-content li {margin-bottom:10px;}
@@ -343,6 +359,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 span.build {border-bottom: 1px solid #ef5826;}
 h2#help {margin-bottom:30px;font-size:24px;}
 
+#tradesbut {padding:25px 90px !important ;}
 
 
 /*MEDIA QUERIES BELOW*/
@@ -362,6 +379,25 @@ h2#help {margin-bottom:30px;font-size:24px;}
         z-index:-1;
 
     }
+
+
+/*this is the background cranes*/
+.row.servrow {    
+    padding:10% 12%;
+    background-image:url('../images/cranesbg.jpg');
+background-attachment:fixed;
+background-position:center bottom;
+background-size:cover;
+}
+
+.row.servrow:before {
+    background-image:url('https://www.transparenttextures.com/patterns/3px-tile.png');
+    background-attachment:fixed; 
+    filter:brightness(50%);    
+}
+
+.service-main{text-align:center; color:white; border:2px solid white;box-shadow:3px 3px 10px 2px #333;padding:
+    5vw 5vh;transition:0.5s all;background:transparent; backdrop-filter:blur(2px) brightness(80%);}
 
 
 
