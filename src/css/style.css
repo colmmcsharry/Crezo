@@ -38,15 +38,6 @@ body{margin:0;background:#fafafe}
 
 ul.sub-data{flex-wrap:wrap;justify-content: center; }
 
-ul
-.listimg {
-    height:34px !important;
-     width:34px !important; 
-     display:block; 
-     position:
-     absolute;
-        left:50%;
-        transform:translate(-50%);}
 /*these are the ones in the footer*/
 ul.social{display:flex;margin:0;padding:0;list-style-type:none;justify-content:center}
  .social li{margin:0 10px;}
@@ -484,6 +475,12 @@ border:none;}
     ul.sub-data li {font-size:12px;}
     /* this is so the list of consrruction types goes vertical on mobile */
 
+
+    #mycta {width:9rem; }
+ul.sub-data{flex-wrap:wrap;justify-content: flex-start; }
+
+ul.sub-data li {left:-20%;}
+
     iframe {margin: 0 auto; width:100%;}
     .banner .banner-details .sub-data li{padding:0 15px;position:relative;font-size:16px;text-shadow:1px 1px 4px #333;top:10px;}
     .about-main .left .gatsby-image-wrapper{height:400px}
@@ -506,6 +503,7 @@ border:none;}
 
 @media only screen and (max-width:380px){
     iframe {max-width:95%;}
+
 }
 
 
