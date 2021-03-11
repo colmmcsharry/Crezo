@@ -27,18 +27,16 @@ body{margin:0;background:#fafafe}
 .banner .banner-details .sub-data li:after{content:"";width:6px;height:6px;display:inline-block;background:#fff;position:absolute;top:50%;margin-top:-3px;right:-3px;border-radius:50%}
 .banner .banner-details .sub-data li:last-child:after{display:none}
 
+
+
+#mycta {top:50px;position:relative; width:12rem;object-fit:contain; 
+}
+
+#mycta:hover {filter: contrast(150%);}
+
 .iconlist {display:inline-block;border:1px solid red;height:4rem; width:4rem;margin:0 2rem;}
 
 ul.sub-data{flex-wrap:wrap;justify-content: center; }
-
-#sign {height:200px; width:100px; position:absolute; left:48%; bottom:-20px; z-index:777;}
-
-#cta {top:50px;position:relative;
-font-family:Verdana;
-font-weight:bold;
-border:2px solid black;
-background-color:yellow;
-}
 
 ul
 .listimg {
@@ -140,7 +138,7 @@ margin-bottom:13px;}
 .servh2 {color:#333;
  }
 
-.servicons {height:100px; width:150px; margin:15px; backdrop-filter:blur(3px);}
+.servicons {height:100px; width:150px; margin:15px;}
 
 .servrow {border:2px solid transparent;
 padding-left:5rem;

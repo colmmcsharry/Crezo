@@ -1,6 +1,8 @@
 import React from "react";
 import Img from "gatsby-image";
-import touch from '../images/touch.png'
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import ctaj from '../images/ctaj.jpg'
+
 
 
 export default function Banner ({data}) {
@@ -33,10 +35,16 @@ export default function Banner ({data}) {
             </ul>
            {/* <button id="cta">Get in Touch!</button>*/}
            
+           <ScrollLink to="Contact" offset={-70} smooth={true} duration={500}>
+
+
+           <img src={ctaj} id="mycta"/>
+
+           </ScrollLink>
           </div>
 
         </div>
-         <img src={touch} id="sign"/>
+         
       </div>
     );
   
