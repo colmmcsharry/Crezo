@@ -33,13 +33,15 @@ body{margin:0;background:#fafafe}
     animation: fadein 4s ease forwards;
 }
 
+#mycta:hover {filter: contrast(150%);}
+
 @keyframes fadein {
     to {
         opacity:1;
     }
 }
 
-#mycta:hover {filter: contrast(150%);}
+
 
 .iconlist {display:inline-block;border:1px solid red;height:4rem; width:4rem;margin:0 2rem;}
 
@@ -152,7 +154,7 @@ place-items:center;}
 /*this is the background cranes*/
 .row.servrow {    
     position:relative;
-    padding:19% 5%;
+    padding:19% 5% 17%;
     background-image:url('../images/cranesmobile.jpg');
 background-attachment:scroll;
 background-repeat:no-repeat;
@@ -383,7 +385,7 @@ h2#help {margin-bottom:30px;font-size:24px;}
 
 /*this is the background cranes*/
 .row.servrow {    
-    padding:10% 12%;
+    padding:10% 12% 9%;
     background-image:url('../images/cranesbg.jpg');
 background-attachment:fixed;
 background-position:center bottom;
