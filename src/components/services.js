@@ -24,7 +24,7 @@ export default class Services extends Component {
             <h2 className="servh2">Services</h2>
           </div>
          </div>
-          <div className="row servrow">
+          <div className="row servrow" id="parallax">
             {data.edges.map((item, index) => {
               return (
                 <div key={index} className="col-md-6 mb-3">

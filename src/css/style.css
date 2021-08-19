@@ -153,16 +153,44 @@ place-items:center;}
 
 /*this is the background cranes*/
 .row.servrow {    
-    position:relative;
     padding:19% 5% 17%;
-    background-image:url('../images/cranesmobile.jpg');
+    /* background-image:url('../images/cranesmobile.jpg');
 background-attachment:scroll;
 background-repeat:no-repeat;
-background-size:cover;
+background-size:cover; */
 width:100vw;
 }
 
-.row.servrow:before {
+
+
+#parallax {
+width:100%;
+height:100%;
+  position: relative;
+  overflow: hidden; 
+  display: flex;
+  position: relative;
+background-color:rgb(177, 139, 139);
+}
+
+
+
+#parallax::before {
+    background-image:url('../images/cranesmobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position:absolute;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity:0.5;
+    z-index: 0;
+}
+
+/* .row.servrow:before {
     content:""; 
 position: absolute;
     background-color: #8a0027;
@@ -172,16 +200,15 @@ position: absolute;
     filter:brightness(50%);    
     left:0;
     top:0;
-
 width:100%;
 height:100%;
-}
+} */
 
-.service-main{text-align:center; color:white; border:2px solid white;box-shadow:3px 3px 10px 2px #333;padding:
-    5vw 5vh;transition:0.5s all;background:transparent; backdrop-filter:blur(1px) brightness(80%)}
+.service-main{text-align:center; color:#333; border:2px solid #333;box-shadow:3px 3px 10px 2px #333;padding:
+    5vw 5vh;transition:0.5s all;background:white;}
 
 
-.readmorelink {font-size:22px;cursor:pointer; color:white;
+.readmorelink {font-size:22px;cursor:pointer; color:#333;
 }
 
 
@@ -386,20 +413,20 @@ h2#help {margin-bottom:30px;font-size:24px;}
 /*this is the background cranes*/
 .row.servrow {    
     padding:10% 12% 9%;
-    background-image:url('../images/cranesbg.jpg');
+    /* background-image:url('../images/cranesbg.jpg');
 background-attachment:fixed;
 background-position:center bottom;
-background-size:cover;
+background-size:cover; */
 }
 
-.row.servrow:before {
+/* .row.servrow:before {
     background-image:url('https://www.transparenttextures.com/patterns/3px-tile.png');
     background-attachment:fixed; 
     filter:brightness(50%);    
-}
+} */
 
-.service-main{text-align:center; color:white; border:2px solid white;box-shadow:3px 3px 10px 2px #333;padding:
-    5vw 5vh;transition:0.5s all;background:transparent; backdrop-filter:blur(2px) brightness(80%);}
+.service-main{text-align:center; color:#333; border:2px solid white;box-shadow:3px 3px 10px 2px #333;padding:
+    5vw 5vh;transition:0.5s all;background:white;}
 
 
 
@@ -489,6 +516,8 @@ border:none;}
     /* this is so the list of consrruction types goes vertical on mobile */
 
 
+
+
     #mycta {width:9rem; top:20px;}
 ul.sub-data{flex-wrap:wrap;justify-content: flex-start; }
 
@@ -519,4 +548,8 @@ ul.sub-data li {left:-20%;}
 
 }
 
-
+@media only screen and (min-width:480px){
+#parallax::before {
+    background-image:url('../images/cranesbg.jpg');
+}
+}
